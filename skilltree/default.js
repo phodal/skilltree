@@ -63,8 +63,8 @@
 
 })(window.jQuery, window.ko, {
 	learnTemplate: 'Learn {n} to unlock.',
-	portraitPathTemplate: 'img/portraits/portrait-{n}.jpg', 
-	numPortraits: 22, 
+	portraitPathTemplate: 'img/portraits/portrait-1.jpg',
+	numPortraits: 1,
 	defaultStats: {
 		'Charisma': 9
 		, 'Dexterity': 9
@@ -347,7 +347,7 @@
 		{
 			id: 10
 			, title: 'Front-end Development Mastery'
-			, dependsOn: [9]  
+			, dependsOn: [9]
 			, stats: [
 				{
 					title: 'Dexterity'
@@ -410,11 +410,11 @@
                 {
                     label: 'w3schools.com SQL Tutorial'
 	                , url: 'http://www.w3schools.com/sql/'
-                }                    
+                }
                 ,{
 		            label: 'SQLZOO Interactive SQL Tutorial'
                     , url: 'http://sqlzoo.net/wiki/'
-                }                    
+                }
                 ,{
                     label: 'Database Normalization Wiki'
                     , url: 'https://en.wikipedia.org/wiki/Database_normalization'
@@ -578,7 +578,7 @@
 				, 'You use advanced techniques like experience mapping to lead conversations with stakeholders.'
 			]
             , links: [
-             	{ 
+             	{
              		label: 'The anatomy of an experience map'
              		, url: 'http://www.adaptivepath.com/ideas/the-anatomy-of-an-experience-map'
              	}
