@@ -10,7 +10,7 @@
 			var asciiOffset = 96; //64 for caps, 96 for lower
 			var hashDelimeter = '_';
 
-			var numPortraits = 22;
+			var numPortraits = 1;
 
 			//Intro vs Talent Tree UI state
 			self.isOpen = ko.observable(true);
