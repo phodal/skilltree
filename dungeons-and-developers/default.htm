@@ -1,127 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dungeons & Developers</title>
-	<meta name="description" content="An RPG-style talent tree for web developers.">
-	<meta name="keywords" content="web design development rpg game talent skill">
-	<link href="css/layout.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dungeons & Developers</title>
+  <meta name="description" content="An RPG-style talent tree for web developers.">
+  <meta name="keywords" content="web design development rpg game talent skill">
+  <link href="css/layout.css" rel="stylesheet">
 </head>
 <body>
-	<div class="ltIE9-hide">
-		<div data-bind="css: { open: isOpen }" class="page">
-			<header>
-				<img data-bind="click: toggle" src="img/logo.png" class="logo"></header>
-			<div class="intro">
-				<img data-bind="click: toggle" src="img/screenshot.png"><div class="content">
-					<h2>An RPG-style talent tree
-						<br />
-						for web developers</h2>
-					<p>As professional nerds, we love role-playing games. And we love web development. Naturally, we wondered what a character talent tree for a web developer might look like.</p>
-					<h3>So, we decided to build one.</h3>
-					<button data-bind="click: toggle">Open the talent tree &raquo;</button></div>
-			</div>
-			<div class="talent-tree">
-				<div class="who-made-this">
-					<!-- AddThis Button BEGIN -->
-					<div class="addthis_toolbox addthis_default_style addthis_32x32_style" style="float:right;">
-						<a class="addthis_button_facebook"></a>
-						<a class="addthis_button_twitter"></a>
-						<a class="addthis_button_google_plusone_share"></a>
-						<a class="addthis_button_email"></a>
-					</div>
+<div class="ltIE9-hide">
+  <div data-bind="css: { open: isOpen }" class="page">
+    <header>
+      <img data-bind="click: toggle" src="img/logo.png" class="logo"></header>
+    <div class="talent-tree">
+      <h2 class="start-helper" data-bind="css:{active:noPointsSpent}">Start here!</h2>
+      <!--ko foreach: skills-->
+      <!--ko if: hasDependencies-->
+      <div
+        data-bind="css: { 'can-add-points': canAddPoints, 'has-points': hasPoints, 'has-max-points': hasMaxPoints }, attr: { 'data-skill-id': id }"
+        class="skill">
+        <div data-bind="css: { active: dependenciesFulfilled }" class="skill-dependency"></div>
+      </div>
+      <!--/ko-->
+      <!--/ko-->
+      <!--ko foreach: skills-->
+      <div
+        data-bind="css: { 'can-add-points': canAddPoints, 'has-points': hasPoints, 'has-max-points': hasMaxPoints }, attr: { 'data-skill-id': id }"
+        class="skill">
+        <div class="icon-container">
+          <div class="icon"></div>
+        </div>
+        <div class="frame">
+          <div class="tool-tip">
+            <h3 data-bind="text: title" class="skill-name"></h3>
 
-					<h1>Who made this?</h1>
-					<p>352 is a digital agency creating websites, software and marketing campaigns. We came up with <i>Dungeons &amp; Developers</i> as a fun way to assess, promote and learn the skills it takes to design and develop great web sites. This page was built during the
-					<a onclick="_gaq.push(['_trackEvent','external link','who made this?','352 blog (race update)']);" href="http://www.352media.com/blog/race-week-2013/" target="_blank">"Race to 3:52"</a>, our annual company retreat that has every member of the company working in teams on various innovative (and sometimes silly) projects. It&rsquo;s a pep rally, hackathon and family reunion all rolled into one event.</p>
-					<p>We love this stuff. During our day jobs, we partner with great clients to build smart solutions that drive results. Find out more at
-						<a onclick="_gaq.push(['_trackEvent','external link','who made this?','352']);" href="http://www.352media.com/" target="_blank">352media.com</a>.</p>
-					<hr/>
-				</div>
-				<h2 class="start-helper" data-bind="css:{active:noPointsSpent}">Start here!</h2>
-				<!--ko foreach: skills-->
-				<!--ko if: hasDependencies-->
-				<div data-bind="css: { 'can-add-points': canAddPoints, 'has-points': hasPoints, 'has-max-points': hasMaxPoints }, attr: { 'data-skill-id': id }" class="skill">
-					<div data-bind="css: { active: dependenciesFulfilled }" class="skill-dependency"></div>
-				</div>
-				<!--/ko-->
-				<!--/ko-->
-				<!--ko foreach: skills-->
-				<div data-bind="css: { 'can-add-points': canAddPoints, 'has-points': hasPoints, 'has-max-points': hasMaxPoints }, attr: { 'data-skill-id': id }" class="skill">
-					<div class="icon-container">
-						<div class="icon"></div>
-					</div>
-					<div class="frame">
-						<div class="tool-tip">
-							<h3 data-bind="text: title" class="skill-name"></h3>
-							<div data-bind="html: description" class="skill-description"></div>
-							<ul class="skill-links">
-								<!--ko foreach: links-->
-								<li>
-									<a data-bind="attr: { href: url }, click: function(){
-										_gaq.push(['_trackEvent',$parent.title, label, url]);
-										return true;
-										}, text: label" target="_blank"></a>
-								</li>
-								<!--/ko-->
-							</ul>
-							<hr data-bind="visible: currentRankDescription() || nextRankDescription()">
-							<div data-bind="if: currentRankDescription" class="current-rank-description">Current rank: <span data-bind="	text: currentRankDescription"></span></div>
-							<div data-bind="if: nextRankDescription" class="next-rank-description">Next rank: <span data-bind="	text: nextRankDescription"></span></div>
-							<hr>
-							<ul class="stats">
-								<!--ko foreach: stats-->
-								<li><span class="value">+<span data-bind="text: value"></span></span> <span data-bind="	text: title" class="title"></span></li>
-								<!--/ko-->
-							</ul>
-							<!--ko if: talentSummary-->
-							<div class="talent-summary">Grants <span data-bind="text: talentSummary"></span></div>
-							<!--/ko-->
-							<div data-bind="text: helpMessage" class="help-message"></div>
-						</div>
-						<div class="skill-points"><span data-bind="text: points" class="points"></span>/<span data-bind="	text: maxPoints" class="max-points"></span></div>
-						<div data-bind="click: addPoint, rightClick: removePoint" class="hit-area"></div>
-					</div>
-				</div>
-				<!--/ko-->
-			</div>
-			<div class="avatar">
-				<div class="portrait">
-					<img data-bind="attr: { src: portraitURL }"></div>
-				<div class="portrait-controls">
-					<button data-bind="click: choosePreviousPortrait">&laquo;</button><button data-bind="click: chooseNextPortrait">&raquo;</button>
-				</div>
-				<div class="details">
-					<input data-bind="value: avatarName" class="h2"><div class="level">Level <span data-bind="	text: level" class="value"></span> Web Developer</div>
-					<div data-bind="text: talentSummary" class="talent-summary"></div>
-					<ul class="stats">
-						<!--ko foreach: stats-->
-						<li><span data-bind="text: title" class="title"></span>: <span data-bind="	text: value" class="value"></span></li>
-						<!--/ko-->
-					</ul>
-				</div>
-			</div>
-			<div class="sign-off">
-				<h2>It&rsquo;s dangerous to go alone!</h2>
-				<p>Throughout the dark corners of the web, doors are always opening to new challenges that will test the mettle of even the most stout developer. Let these watering holes provide a brief respite and an opportunity for you and other heroes to band together:
-				</p>
-				<ul>
-					<li><a onclick="_gaq.push(['_trackEvent','external link','footer','A List Apart']);" href="http://alistapart.com/" target="_blank">A List Apart</a></li>
-					<li><a onclick="_gaq.push(['_trackEvent','external link','footer','Smashing Magazine']);" href="http://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
-					<li><a onclick="_gaq.push(['_trackEvent','external link','footer','Code Academy']);" href="http://www.codecademy.com/" target="_blank">Code Academy</a></li>
-					<li><a onclick="_gaq.push(['_trackEvent','external link','footer','Stack Overflow']);" href="http://www.stackoverflow.com/" target="_blank">Stack Overflow</a></li>
-					<li><a onclick="_gaq.push(['_trackEvent','external link','footer','reddit']);" href="http://www.reddit.com/r/webdesign/" target="_blank">reddit webdesign</a></li>
-				</ul>
-				<h3>Happy adventuring!</h3>
-				<a onclick="_gaq.push(['_trackEvent','external link','footer','352']);" href="http://www.352media.com/" target="_blank" class="logo-352">
-					<img src="img/logo352.png" alt="352"></a></div>
-		</div>
-	</div>
+            <div data-bind="html: description" class="skill-description"></div>
+            <ul class="skill-links">
+              <!--ko foreach: links-->
+              <li>
+                <a data-bind="attr: { href: url }, text: label" target="_blank"></a>
+              </li>
+              <!--/ko-->
+            </ul>
+            <hr data-bind="visible: currentRankDescription() || nextRankDescription()">
+            <div data-bind="if: currentRankDescription" class="current-rank-description">Current rank: <span
+              data-bind="	text: currentRankDescription"></span></div>
+            <div data-bind="if: nextRankDescription" class="next-rank-description">Next rank: <span
+              data-bind="	text: nextRankDescription"></span></div>
+            <hr>
+            <ul class="stats">
+              <!--ko foreach: stats-->
+              <li><span class="value">+<span data-bind="text: value"></span></span> <span data-bind="	text: title"
+                                                                                          class="title"></span></li>
+              <!--/ko-->
+            </ul>
+            <!--ko if: talentSummary-->
+            <div class="talent-summary">Grants <span data-bind="text: talentSummary"></span></div>
+            <!--/ko-->
+            <div data-bind="text: helpMessage" class="help-message"></div>
+          </div>
+          <div class="skill-points"><span data-bind="text: points" class="points"></span>/<span
+            data-bind="	text: maxPoints" class="max-points"></span></div>
+          <div data-bind="click: addPoint, rightClick: removePoint" class="hit-area"></div>
+        </div>
+      </div>
+      <!--/ko-->
+    </div>
+    <div class="avatar">
+      <div class="portrait">
+        <img data-bind="attr: { src: portraitURL }"></div>
+      <div class="portrait-controls">
+        <button data-bind="click: choosePreviousPortrait">&laquo;</button>
+        <button data-bind="click: chooseNextPortrait">&raquo;</button>
+      </div>
+      <div class="details">
+        <input data-bind="value: avatarName" class="h2">
 
-	<script src="../app/scripts/jquery.js"></script>
-	<script src="../app/scripts/knockout.min.js"></script>
-	<script src="../app/scripts/skilltree.js"></script>
-	<script src="default.js"></script>
+        <div class="level">Level <span data-bind="	text: level" class="value"></span> Web Developer</div>
+        <div data-bind="text: talentSummary" class="talent-summary"></div>
+        <ul class="stats">
+          <!--ko foreach: stats-->
+          <li><span data-bind="text: title" class="title"></span>: <span data-bind="	text: value" class="value"></span>
+          </li>
+          <!--/ko-->
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../app/scripts/jquery.js"></script>
+<script src="../app/scripts/knockout.min.js"></script>
+<script src="../app/scripts/skilltree.js"></script>
+<script src="default.js"></script>
 </body>
 </html>
