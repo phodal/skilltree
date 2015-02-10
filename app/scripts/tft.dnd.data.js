@@ -5,7 +5,7 @@
 				{
 					id: 1
 					, title: 'HTML'
-					, description: 'The main language for creating web pages, HTML is written in the form of tags enclosed in angle brackets (like <html>).'
+					, description: 'The main language for creating web pages, HTML is written in the form of tags enclosed in angle brackets (like &lt;html&gt;).'
 					, rankDescriptions: [
 						'You understand how to create and view a basic web page.'
 						, 'You understand how to link pages together, design multi-column layouts, and work with form fields and media elements.'
