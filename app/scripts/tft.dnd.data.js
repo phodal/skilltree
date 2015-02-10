@@ -1,32 +1,3 @@
-/*{
-	id: 2
-	, title: 'HTML'
-	, maxPoints: 3 //default 1
-	, description: 'The main language for creating web pages, written in the form of tags enclosed in angle brackets (like <html>).'
-	, rankDescriptions: [
-		'You understand how to create a basic web page.'
-		, 'You understand how to use various tags and attributes to format and organize content.'
-	]
-	, dependsOn: [1, 6]
-	, links:[
-		{
-			label: 'w3schools.com HTML Tutorial'
-			, url: 'http://www.w3schools.com/html/'
-		}
-	]
-	, stats: [
-		{
-			title: 'Intellect'
-			, value: 10
-		}
-	]
-}*/
-
-/*
-"The bones have spoken!" - High Aldwin, Willow
-
-*/
-
 (function(){
 	(function(ns) {
 		ns.data = {
@@ -304,7 +275,7 @@
 				{
 					id: 10
 					, title: 'Front-end Development Mastery'
-					, dependsOn: [9]  
+					, dependsOn: [9]
 					, stats: [
 						{
 							title: 'Dexterity'
@@ -367,11 +338,11 @@
 		                {
 		                    label: 'w3schools.com SQL Tutorial'
 			                , url: 'http://www.w3schools.com/sql/'
-		                }                    
+		                }
 	                    ,{
 				            label: 'SQLZOO Interactive SQL Tutorial'
                             , url: 'http://sqlzoo.net/wiki/'
-	                    }                    
+	                    }
 	                    ,{
 	                        label: 'Database Normalization Wiki'
                             , url: 'https://en.wikipedia.org/wiki/Database_normalization'
@@ -535,7 +506,7 @@
 						, 'You use advanced techniques like experience mapping to lead conversations with stakeholders.'
 					]
 	                , links: [
-	                 	{ 
+	                 	{
 	                 		label: 'The anatomy of an experience map'
 	                 		, url: 'http://www.adaptivepath.com/ideas/the-anatomy-of-an-experience-map'
 	                 	}

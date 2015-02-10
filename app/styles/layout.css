@@ -159,7 +159,7 @@ li {
   -ms-transform: scale(1);
   transform: scale(1);
 }
-.intro images {
+.intro img {
   float: left;
   cursor: pointer;
 }
@@ -729,7 +729,7 @@ li {
   height: 140px;
   pointer-events: none;
 }
-.avatar .portrait images {
+.avatar .portrait img {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
