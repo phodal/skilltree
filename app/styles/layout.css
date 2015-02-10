@@ -33,7 +33,7 @@ body {
   margin: 0;
   padding: 0;
   color: #eee;
-  background: #000000 url(../img/bg.jpg) top center no-repeat;
+  background: #000000 url(../images/bg.jpg) top center no-repeat;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.5em;
@@ -85,7 +85,7 @@ button {
   cursor: pointer;
   color: #510;
 }
-img {
+images {
   border: 0 none;
 }
 a {
@@ -159,7 +159,7 @@ li {
   -ms-transform: scale(1);
   transform: scale(1);
 }
-.intro img {
+.intro images {
   float: left;
   cursor: pointer;
 }
@@ -210,7 +210,7 @@ li {
   display: block;
   width: 130px;
   height: 130px;
-  background: #000000 url(../img/rings.png) no-repeat center center;
+  background: #000000 url(../images/rings.png) no-repeat center center;
 }
 .talent-tree {
   width: 100%;
@@ -276,7 +276,7 @@ li {
 .skill .icon {
   width: 100%;
   height: 100%;
-  background: url(../img/icon-sprite.png) no-repeat top left;
+  background: url(../images/icon-sprite.png) no-repeat top left;
   -moz-opacity: 0.35;
   -khtml-opacity: 0.35;
   -webkit-opacity: 0.35;
@@ -292,7 +292,7 @@ li {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(../img/sprite.png) no-repeat top left;
+  background: url(../images/sprite.png) no-repeat top left;
 }
 .skill .frame:hover .tool-tip {
   visibility: visible;
@@ -408,7 +408,7 @@ li {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=35);
   filter: alpha(opacity=35);
   pointer-events: none;
-  background: url(../img/connection-sprite.png) no-repeat top left;
+  background: url(../images/connection-sprite.png) no-repeat top left;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -722,14 +722,14 @@ li {
   filter: alpha(opacity=100);
 }
 .avatar .portrait {
-  background: url(../img/avatar-frame.png) top left no-repeat;
+  background: url(../images/avatar-frame.png) top left no-repeat;
   position: absolute;
   top: 15px;
   width: 140px;
   height: 140px;
   pointer-events: none;
 }
-.avatar .portrait img {
+.avatar .portrait images {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -848,7 +848,7 @@ li {
   margin-bottom: 20px;
 }
 .start-helper {
-  background: url(../img/red-arrow.png) no-repeat left center;
+  background: url(../images/red-arrow.png) no-repeat left center;
   padding-left: 55px;
   position: absolute;
   top: 30px;
