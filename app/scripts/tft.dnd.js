@@ -48,7 +48,7 @@
       });
 
       //Avatar properties
-      self.avatarName = ko.observable('Your Name');
+      self.avatarName = ko.observable('輸入你的名字');
       //level = total of all points spent
       self.level = ko.computed(function () {
         var totalSkillPoints = 0;
