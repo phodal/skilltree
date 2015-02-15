@@ -67,7 +67,7 @@
 				},
 				{
 					id: 3
-					, title: 'CSS Tools'
+					, title: 'CSS 工具'
 					, dependsOn: [2]
 	                , links: [
 		                {
@@ -156,7 +156,7 @@
 
 				{
 					id: 6
-					, title: 'Search Engine Optimization (SEO)'
+					, title: '搜索引擎优化(Search Engine Optimization )'
 					, dependsOn: [1]
 	                , links: [
 		                {
