@@ -12,8 +12,8 @@
 					]
 	                , links: [
 	                    {
-	                        label: 'HTML.net Tutorials'
-                            , url: 'http://www.html.net/tutorials/html/'
+	                        label: '无处不在的html'
+                            , url: 'http://www.phodal.com/blog/be-a-geek-chapter-1-anywhere-html/'
 	                    }
 		                , {
 		                    label: 'Sublime Text 3, a great code editor'
@@ -43,8 +43,8 @@
 					, dependsOn: [1]
 	                , links: [
 		                {
-		                    label: 'CSS Tutorials'
-			                , url: 'http://www.htmldog.com/guides/css/'
+		                    label: '无处不在的css'
+			                , url: 'http://www.phodal.com/blog/be-a-geek-chapter-6-anywhere-css/'
 		                }
 	                    , {
 	                        label: 'Can I use... (browser support)'
@@ -160,8 +160,8 @@
 					, dependsOn: [1]
 	                , links: [
 		                {
-		                    label: 'Search Engine Optimization (Google)'
-			                , url: 'https://support.google.com/webmasters/answer/35291'
+		                    label: '每个程序员必知之SEO'
+			                , url: 'http://www.phodal.com/blog/every-programmer-should-know-how-seo/'
 		                }
 	                    , {
 	                        label: 'Webmaster Tools (Google)'
@@ -230,8 +230,8 @@
 			                , url: 'http://www.htmldog.com/guides/javascript/'
 		                }
 	                    , {
-	                        label: 'Codecademy JavaScript'
-                            , url: 'http://www.codecademy.com/tracks/javascript'
+	                        label: '无处不在的javascript'
+                            , url: 'http://www.phodal.com/blog/be-a-geek-chapter-2-anywhere-javascript-1/'
 	                    }
 	                    , {
 	                        label: 'List of Videos for Beginner JavaScript'
@@ -333,7 +333,6 @@
 				{
 					id: 13
 					, title: 'Database Authoring'
-					//, dependsOn: [1]
 	                , links: [
 		                {
 		                    label: 'w3schools.com SQL Tutorial'
