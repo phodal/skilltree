@@ -1,4 +1,4 @@
-/* global console ko */
+/* global console,ko,tft,prettyJoin,namespace,isInvalidIEVersion */
 (function ($, ko) {
   'use strict';
   (function (ns) {
@@ -192,7 +192,7 @@
                 pair.wasAllocated = true; //don't add this one again
                 pointsWereAllocated = true;
               }
-            })
+            });
           }
 
           do_update_hash = true;
@@ -232,7 +232,7 @@
 
       //Launch
       var current_hash = window.location.hash.substr(1);
-      self.isOpen(current_hash != ''); //If there is a hash, open the skill tree by default
+      self.isOpen(current_hash !== ''); //If there is a hash, open the skill tree by default
       self.useHash(current_hash);
 
       return self;
@@ -265,14 +265,18 @@
       self.dependenciesFulfilled = ko.computed(function () {
         var result = true;
         ko.utils.arrayForEach(self.dependencies(), function (item) {
-          if (!item.hasPoints()) result = false;
+          if (!item.hasPoints()) {
+            result = false;
+          }
         });
         return result;
       });
       self.dependentsUsed = ko.computed(function () {
         var result = false;
         ko.utils.arrayForEach(self.dependents(), function (item) {
-          if (item.hasPoints()) result = true;
+          if (item.hasPoints()) {
+            result = true;
+          }
         });
         return result;
       });
@@ -299,9 +303,11 @@
         if (!self.dependenciesFulfilled()) {
           var s = [];
           ko.utils.arrayForEach(self.dependencies(), function (item) {
-            if (!item.hasMaxPoints()) s.push(item.title);
+            if (!item.hasMaxPoints()) {
+              s.push(item.title);
+            }
           });
-          return '学习 ' + prettyJoin(s) + ' 才能解锁.'
+          return '学习 ' + prettyJoin(s) + ' 才能解锁.';
         } else if (self.canAddPoints()) {
           return '点击添加分数';
         }
@@ -318,10 +324,14 @@
       });
 
       self.addPoint = function () {
-        if (self.canAddPoints()) self.points(self.points() + 1);
+        if (self.canAddPoints()) {
+          self.points(self.points() + 1);
+        }
       };
       self.removePoint = function () {
-        if (self.canRemovePoints()) self.points(self.points() - 1);
+        if (self.canRemovePoints()) {
+          self.points(self.points() - 1);
+        }
       };
 
       return self;
@@ -337,14 +347,16 @@
       self.url = e.url || 'javascript:void(0)';
 
       return self;
-    }
+    };
   })(namespace('tft.dnd'));
 
 
   $(function () {
 
-    if (isInvalidIEVersion())
+    if (isInvalidIEVersion()){
       return;
+    }
+
 
 
     var vm = new tft.dnd.TalentTree(tft.dnd.data); //Make a new Talent Tree VM based on the data in tft.dnd.data.js
