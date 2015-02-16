@@ -1,3 +1,4 @@
+/* global ko */
 function namespace(namespaceString) {
   'use strict';
   var parts = namespaceString.split('.'),
@@ -35,7 +36,9 @@ ko.bindingHandlers.middleClick = {
   init: function (element, valueAccessor) {
     'use strict';
     $(element).on('mousedown', function (event) {
-      if (event.which === 2) valueAccessor()();
+      if (event.which === 2) {
+        valueAccessor()();
+      }
     });
   }
 };

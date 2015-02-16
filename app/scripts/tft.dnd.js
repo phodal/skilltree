@@ -1,5 +1,6 @@
+/* global console ko */
 (function ($, ko) {
-
+  'use strict';
   (function (ns) {
     //VM for the entire Talent Tree page
     var TalentTree = ns.TalentTree = function (_e) {
@@ -110,12 +111,16 @@
       });
       self.choosePreviousPortrait = function () {
         var n = self.portrait() - 1;
-        if (n < 1) n = numPortraits;
+        if (n < 1) {
+          n = numPortraits;
+        }
         self.portrait(n);
       };
       self.chooseNextPortrait = function () {
         var n = self.portrait() + 1;
-        if (n > numPortraits) n = 1;
+        if (n > numPortraits) {
+          n = 1;
+        }
         self.portrait(n);
       };
 
@@ -138,7 +143,9 @@
         ko.utils.arrayForEach(self.skills(), function (skill) {
           if (skill.hasPoints()) {
             a.push(String.fromCharCode(skill.id + asciiOffset)); //convert skill id to letter of the alphabet
-            if (skill.hasMultiplePoints()) a.push(skill.points()); //only include points if they are > 1
+            if (skill.hasMultiplePoints()) {
+              a.push(skill.points());
+            } //only include points if they are > 1
           }
         });
         return ['', a.join(''), self.portrait(), self.avatarName()].join(hashDelimeter);
@@ -149,8 +156,12 @@
           self.newbMode();
 
           var hashParts = hash.split(hashDelimeter);
-          if (hashParts[2]) self.portrait(Number(hashParts[2])); //use the segment after the second delimeter as the portrait index
-          if (hashParts[3]) self.avatarName(hashParts[3]); //use the segment after the third delimeter as the avatar name
+          if (hashParts[2]) {
+            self.portrait(Number(hashParts[2]));
+          } //use the segment after the second delimeter as the portrait index
+          if (hashParts[3]) {
+            self.avatarName(hashParts[3]);
+          } //use the segment after the third delimeter as the avatar name
 
           var s = hashParts[1]; //use the segment after the first delimeter as the skill hash
 
@@ -160,13 +171,13 @@
           var hashCharacters = s.split('');
           for (var i = 0; i < hashCharacters.length; i++) {
             if (!Number(hashCharacters[i])) { //if the current character is not a number,
-              var skill = getSkillById(hashCharacters[i].charCodeAt(0) - asciiOffset) //convert the character to a skill id and look it up
+              var skill = getSkillById(hashCharacters[i].charCodeAt(0) - asciiOffset); //convert the character to a skill id and look it up
               if (skill) {
                 var points = Number(hashCharacters[i + 1]) || 1; //default to 1 point if the number is not specified next
                 pairs.push({
                   skill: skill
                   , points: points
-                })
+                });
               }
             }
           }
@@ -181,12 +192,12 @@
                 pair.wasAllocated = true; //don't add this one again
                 pointsWereAllocated = true;
               }
-            });
+            })
           }
 
-          doUpdateHash = true;
+          do_update_hash = true;
         }
-      };
+      }
 
       //Hash thottling
 
@@ -200,18 +211,18 @@
         window.location.hash = s || newHash;
       }
 
-      var lastHash, useHash_timeout, newHash, updateHash_timeout, doUpdateHash = true;
+      var lastHash, usehash_timeout, newHash, update_hash_timeout, do_update_hash = true;
       self.useHash = function (hash) {
         lastHash = hash;
-        clearTimeout(useHash_timeout);
-        useHash_timeout = setTimeout(useLastHash, 50);
-      }
+        clearTimeout(usehash_timeout);
+        usehash_timeout = setTimeout(useLastHash, 50);
+      };
       self.hash.subscribe(function (newValue) {
-        console.log(doUpdateHash);
-        if (doUpdateHash) {
+        console.log(do_update_hash);
+        if (do_update_hash) {
           newHash = newValue;
-          clearTimeout(updateHash_timeout);
-          updateHash_timeout = setTimeout(updateHash, 50);
+          clearTimeout(update_hash_timeout);
+          update_hash_timeout = setTimeout(updateHash, 50);
         }
       });
 
@@ -220,12 +231,12 @@
       };
 
       //Launch
-      var currentHash = window.location.hash.substr(1);
-      self.isOpen(currentHash != ''); //If there is a hash, open the skill tree by default
-      self.useHash(currentHash);
+      var current_hash = window.location.hash.substr(1);
+      self.isOpen(current_hash != ''); //If there is a hash, open the skill tree by default
+      self.useHash(current_hash);
 
       return self;
-    }
+    };
     //VM for individual skills
     var Skill = ns.Skill = function (_e) {
       var e = _e || {};

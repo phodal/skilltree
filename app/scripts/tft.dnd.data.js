@@ -1,4 +1,6 @@
+/* global namespace */
 (function(){
+  'use strict';
 	(function(ns) {
 		ns.data = {
 			skills: [
@@ -757,6 +759,6 @@
 				}
 
 			]
-		}
+		};
 	})(namespace('tft.dnd'));
 })();
