@@ -106,7 +106,7 @@
       //Portrait stuff
       self.portrait = ko.observable(Math.ceil(Math.random() * numPortraits));
       self.portraitURL = ko.computed(function () {
-        return 'images/portraits/portrait-' + self.portrait() + '.jpg';
+        return 'app/images/portraits/portrait-' + self.portrait() + '.jpg';
       });
       self.choosePreviousPortrait = function () {
         var n = self.portrait() - 1;
