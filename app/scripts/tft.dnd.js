@@ -48,7 +48,7 @@
       });
 
       //Avatar properties
-      self.avatarName = ko.observable('輸入你的名字');
+      self.avatarName = ko.observable('你的名字');
       //level = total of all points spent
       self.level = ko.computed(function () {
         var totalSkillPoints = 0;
@@ -97,7 +97,7 @@
       self.talentSummary = ko.computed(function () {
         var a = [];
         ko.utils.arrayForEach(self.skills(), function (skill) {
-          if (skill.hasPoints()){
+          if (skill.hasPoints()) {
             a = a.concat(skill.talents);
           }
         });
@@ -295,9 +295,9 @@
           ko.utils.arrayForEach(self.dependencies(), function (item) {
             if (!item.hasMaxPoints()) s.push(item.title);
           });
-          return 'Learn ' + prettyJoin(s) + ' to unlock.'
+          return '学习 ' + prettyJoin(s) + ' 才能解锁.'
         } else if (self.canAddPoints()) {
-          return 'Click to add a point!';
+          return '点击添加分数';
         }
         return '';
       });
