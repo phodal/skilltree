@@ -184,15 +184,16 @@
 
           //cycle through the whole list, adding points where possible, until the list is depleted
           var pointsWereAllocated = true; //flag
+          var handlePair = function (pair) {
+            if (!pair.wasAllocated && pair.skill.canAddPoints()) { //only add points once, and only where possible
+              pair.skill.points(Math.min(pair.skill.maxPoints, pair.points)); //don't add more points than allowed
+              pair.wasAllocated = true; //don't add this one again
+              pointsWereAllocated = true;
+            }
+          };
           while (pointsWereAllocated) {
             pointsWereAllocated = false; //assume the list is depleted by default
-            ko.utils.arrayForEach(pairs, function (pair) {
-              if (!pair.wasAllocated && pair.skill.canAddPoints()) { //only add points once, and only where possible
-                pair.skill.points(Math.min(pair.skill.maxPoints, pair.points)); //don't add more points than allowed
-                pair.wasAllocated = true; //don't add this one again
-                pointsWereAllocated = true;
-              }
-            });
+            ko.utils.arrayForEach(pairs, handlePair);
           }
 
           do_update_hash = true;
