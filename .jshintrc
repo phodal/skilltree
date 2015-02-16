@@ -11,7 +11,7 @@
   "noarg": true,
   "quotmark": "single",
   "undef": true,
-  "unused": true,
+  "unused": false,
   "strict": true,
   "jquery": true,
   "laxcomma": true
