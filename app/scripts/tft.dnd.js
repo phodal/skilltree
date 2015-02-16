@@ -311,16 +311,15 @@
         return self.rankDescriptions[self.points()];
       });
 
-      //Methods
       self.addPoint = function () {
         if (self.canAddPoints()) self.points(self.points() + 1);
-      }
+      };
       self.removePoint = function () {
         if (self.canRemovePoints()) self.points(self.points() - 1);
-      }
+      };
 
       return self;
-    }
+    };
     //VM for a simple hyperlink
     var Link = ns.Link = function (_e) {
       var e = _e || {};
