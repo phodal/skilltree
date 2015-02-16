@@ -347,7 +347,7 @@
       self.url = e.url || 'javascript:void(0)';
 
       return self;
-    };
+    }
   })(namespace('tft.dnd'));
 
 
