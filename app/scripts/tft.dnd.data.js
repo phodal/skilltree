@@ -186,7 +186,7 @@
 				},
 				{
 					id: 7
-					, title: 'Analytics'
+					, title: '分析'
 					, dependsOn: [6]
 	                , links: [
 		                {
@@ -252,7 +252,7 @@
 				},
 				{
 					id: 9
-					, title: 'JS Libraries & Frameworks'
+					, title: 'JS 库和框架'
 					, dependsOn: [8]
 					, maxPoints: 2
 	                , rankDescriptions: [
@@ -274,7 +274,7 @@
 				},
 				{
 					id: 10
-					, title: 'Front-end Development Mastery'
+					, title: '前端 Development Mastery'
 					, dependsOn: [9]
 					, stats: [
 						{
@@ -286,7 +286,7 @@
 
 				{
 					id: 11
-					, title: 'Server-side Programming'
+					, title: '服务端编程'
 					, dependsOn: [1]
 	                , links: [
                         {
@@ -304,7 +304,7 @@
 				},
 				{
 					id: 12
-					, title: 'Server-side Frameworks'
+					, title: '服务端框架'
 					, dependsOn: [11]
 	                , links: [
                         {
@@ -411,7 +411,7 @@
 
 				{
 					id: 15
-					, title: 'Server-side Development Mastery'
+					, title: '服务端 Development Mastery'
 					, dependsOn: [12, 14]
                     , description: 'You are capable of architecting and building an application\'s backend to efficiently store and retrieve data.'
 					, stats: [
@@ -423,7 +423,7 @@
 				},
 				{
 					id: 16
-					, title: 'User Authentication and Authorization'
+					, title: '用户授权和认证'
 					, dependsOn: [15]
 	                , links: [
 	                    {
@@ -525,7 +525,7 @@
 				},
 				{
 					id: 19
-					, title: 'Graphic Design'
+					, title: '图形设计'
 					, maxPoints: 2
 					, rankDescriptions: [
 						'You can create a balanced, complementary layout with a clear message.'
@@ -561,7 +561,7 @@
 				},
 				{
 					id: 20
-					, title: 'Graphic Design Tools'
+					, title: '图形设计工具'
 					, dependsOn: [19]
 	                , links: [
                         {
@@ -583,7 +583,7 @@
 				},
 				{
 					id: 21
-					, title: 'Prototypes'
+					, title: '原型'
 					, dependsOn: [18]
 	                , links: [
 		                {
@@ -610,7 +610,7 @@
 				},
 				{
 					id: 22
-					, title: 'User Experience Design Mastery'
+					, title: '用户体验设计 Mastery'
 					, dependsOn: [19, 21]
                     , description: 'You are capable of converting project requirements to an attractive design that promotes a pleasant user experience.'
 					, stats: [
@@ -626,7 +626,7 @@
 				},
 				{
 					id: 23
-					, title: 'User Testing'
+					, title: '用户测试'
 					, dependsOn: [22]
 	                , links: [
 		                {
@@ -654,7 +654,7 @@
 
 				{
 					id: 24
-					, title: 'Server Administration'
+					, title: '服务器管理'
 	                , links: [
 		                {
 		                    label: 'Comparison of web server software Wiki'
@@ -681,7 +681,7 @@
 				},
 				{
 					id: 25
-					, title: 'Deployment'
+					, title: '部署'
 					, dependsOn: [24]
 	                , links: [
 		                {
