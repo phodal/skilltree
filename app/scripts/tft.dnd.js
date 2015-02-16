@@ -131,11 +131,6 @@
         });
       };
 
-      $(window).konami(function () {
-        self.open();
-        self.godMode();
-      });
-
       //Hash functions
       self.hash = ko.computed(function () {
         var a = [];
