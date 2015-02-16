@@ -33,7 +33,7 @@ body {
   margin: 0;
   padding: 0;
   color: #eee;
-  background: #000000 url(../images/bg.jpg) top center no-repeat;
+  background: #000000 top center no-repeat;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.5em;

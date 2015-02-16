@@ -27,7 +27,7 @@
 
       //Mega skill list population
       self.skills = ko.observableArray(ko.utils.arrayMap(e.skills, function (item) {
-        return new Skill(item, self.skills);
+        return new Skill(item);
       }));
       function getSkillById(id) {
         return ko.utils.arrayFirst(self.skills(), function (item) {
@@ -227,7 +227,7 @@
       return self;
     }
     //VM for individual skills
-    var Skill = ns.Skill = function (_e, allSkills) {
+    var Skill = ns.Skill = function (_e) {
       var e = _e || {};
       var self = function () {
       };
