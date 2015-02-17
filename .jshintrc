@@ -14,5 +14,6 @@
   "unused": false,
   "strict": true,
   "jquery": true,
-  "laxcomma": true
+  "laxcomma": true,
+  "scripturl":true
 }
