@@ -250,6 +250,16 @@
       self.description = e.description;
       self.maxPoints = e.maxPoints || 1;
       self.points = ko.observable(e.points || 0);
+      if(e.books !== undefined){
+        self.books = ko.utils.arrayMap(e.books, function (item) {
+          return new Book(item);
+        });
+      } else {
+        self.books = {
+          name:"",
+          url:""
+        }
+      }
       self.links = ko.utils.arrayMap(e.links, function (item) {
         return new Link(item);
       });
@@ -343,8 +353,18 @@
       var self = function () {
       };
 
-      //Basic properties
       self.label = e.label || (e.url || 'Learn more');
+      self.url = e.url || 'javascript:void(0)';
+
+      return self;
+    };
+
+    var Book = ns.Book = function (_e) {
+      var e = _e || {};
+      var self = function () {
+      };
+
+      self.book_name = e.book_name || (e.url || 'Learn more');
       self.url = e.url || 'javascript:void(0)';
 
       return self;

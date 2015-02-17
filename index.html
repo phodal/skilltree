@@ -35,9 +35,16 @@
 
             <div data-bind="html: description" class="skill-description"></div>
             <ul class="skill-links">
+              博客:
               <!--ko foreach: links-->
               <li>
                 <a data-bind="attr: { href: url }, text: label" target="_blank"></a>
+              </li>
+              <!--/ko-->
+              书籍:
+              <!--ko foreach: books-->
+              <li>
+                <a data-bind="attr: { href: url }, text: book_name" target="_blank"></a>
               </li>
               <!--/ko-->
             </ul>

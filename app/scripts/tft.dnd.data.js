@@ -23,6 +23,12 @@
             , url: 'http://www.sublimetext.com/'
           }
         ]
+          , books: [
+          {
+            book_name: 'Head First HTML与CSS'
+            , url: 'http://www.amazon.cn/Head-First-HTML%E4%B8%8ECSS-%E7%BD%97%E5%B8%83%E6%A3%AE/dp/B00FF3P8FY/ref=sr_1_1?ie=UTF8&qid=1424182950&sr=8-1&keywords=html'
+          }
+        ]
           , maxPoints: 2
           , stats: [
           {
