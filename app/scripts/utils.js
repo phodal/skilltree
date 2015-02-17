@@ -1,4 +1,14 @@
 /* global ko */
+
+window.jiathis_config = {
+  url: window.location.href,
+  summary: "快来试试。",
+  title: "我是 Level 1 Web Developer #Web技能树#",
+  showClose: true,
+  shortUrl: true,
+  hideMore: false
+};
+
 function namespace(namespaceString) {
   'use strict';
   var parts = namespaceString.split('.'),
@@ -48,7 +58,7 @@ function getInternetExplorerVersion() {
   if (navigator.appName === 'Microsoft Internet Explorer') {
     var ua = navigator.userAgent;
     var re = new RegExp('MSIE ([0-9]{1,}[\.0-9]{0,})');
-    if (re.exec(ua) !== null){
+    if (re.exec(ua) !== null) {
       rv = parseFloat(RegExp.$1);
     }
   }

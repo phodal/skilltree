@@ -56,6 +56,7 @@
         ko.utils.arrayForEach(self.skills(), function (skill) {
           totalSkillPoints += skill.points();
         });
+        window.jiathis_config.title = "@phodal 我是Level " + totalSkillPoints + " Web Developer #Web技能树#";
         return totalSkillPoints + 1;
       });
       self.noPointsSpent = ko.computed(function () {
@@ -102,6 +103,7 @@
             a = a.concat(skill.talents);
           }
         });
+        window.jiathis_config.summary = "我获得的称号有: " + a.join(', ');
         return a.join(', ');
       });
       //Portrait stuff
