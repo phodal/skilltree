@@ -18,15 +18,15 @@
             label: '无处不在的html'
             , url: 'http://www.phodal.com/blog/be-a-geek-chapter-1-anywhere-html/'
           }
-          , {
-            label: 'Sublime Text 3, a great code editor'
-            , url: 'http://www.sublimetext.com/'
-          }
         ]
           , books: [
           {
             book_name: 'Head First HTML与CSS'
             , url: 'http://www.amazon.cn/Head-First-HTML%E4%B8%8ECSS-%E7%BD%97%E5%B8%83%E6%A3%AE/dp/B00FF3P8FY/ref=sr_1_1?ie=UTF8&qid=1424182950&sr=8-1&keywords=html'
+          },
+          {
+            book_name: '图灵程序设计丛书:HTML5权威指南',
+            url: 'http://www.amazon.cn/%E5%9B%BE%E7%81%B5%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%9B%E4%B9%A6-HTML5%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E5%BC%97%E9%87%8C%E6%9B%BC/dp/B00H706BIG/ref=sr_1_4?ie=UTF8&qid=1424220765&sr=8-4&keywords=html'
           }
         ]
           , maxPoints: 2
@@ -38,8 +38,8 @@
           , {
             title: 'Charisma'
             , value: 1
-          }
-          , {
+          },
+          {
             title: 'Strength'
             , value: 1
           }
@@ -47,22 +47,31 @@
         },
 
         {
-          id: 2
-          ,
-          title: 'CSS'
-          ,
-          dependsOn: [1]
-          ,
+          id: 2,
+          title: 'CSS',
+          dependsOn: [1],
           links: [
             {
               label: '无处不在的css'
               , url: 'http://www.phodal.com/blog/be-a-geek-chapter-6-anywhere-css/'
-            }
-            , {
+            }, {
               label: 'Can I use... (browser support)'
               , url: 'http://caniuse.com/#cats=CSS'
             }
-          ]
+          ], books: [
+          {
+            book_name: 'Head First HTML与CSS',
+            url: 'http://www.amazon.cn/Head-First-HTML%E4%B8%8ECSS-%E7%BD%97%E5%B8%83%E6%A3%AE/dp/B00FF3P8FY/ref=sr_1_1?ie=UTF8&qid=1424182950&sr=8-1&keywords=html'
+          },
+          {
+            book_name: 'CSS权威指南',
+            url: 'http://www.amazon.cn/CSS%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E8%BF%88%E8%80%B6/dp/B0011F5SIC/ref=sr_1_1?ie=UTF8&qid=1424220922&sr=8-1&keywords=css'
+          },
+          {
+            book_name: 'CSS禅意花园',
+            url: 'http://www.amazon.cn/CSS%E7%A6%85%E6%84%8F%E8%8A%B1%E5%9B%AD-%E8%B0%A2%E4%BC%8A/dp/B008HN791U/ref=sr_1_3?ie=UTF8&qid=1424220922&sr=8-3&keywords=css'
+          }
+        ]
           ,
           maxPoints: 2
           ,
@@ -75,10 +84,10 @@
           ,
           rankDescriptions: [
             '熟悉基础CSS的格式和CSS盒模式'
-            , 'You are familiar with media queries and responsive design for adapting your design to fit different devices.'
+            , '熟悉媒体查询和响应式设计，使得设计有适配不同的移动'
           ]
           ,
-          description: 'Cascading Style Sheets (CSS) is a language for styling web pages.  CSS rules target elements in the HTML document to specify the presentation, such as font, color, spacing, and size.'
+          description: 'CSS能够对网页中的对象的位置排版进行像素级的精确控制，支持几乎所有的字体字号样式，拥有对网页对象和模型样式编辑的能力，并能够进行初步交互设计。'
           ,
           talents: ['Stylish']
         },
