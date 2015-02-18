@@ -251,12 +251,12 @@
           ,
           links: [
             {
-              label: '10 SEO Analysis Tools You Should Be Using'
+              label: '十个你应该使用的SEO工具'
               , url: 'http://www.webgnomes.org/blog/10-seo-analysis-tools/'
             }
             , {
-              label: 'Configuring SEO data in Analytics (Google)'
-              , url: 'https://support.google.com/analytics/answer/1308621?hl=en'
+              label: '在 Google Analytics（分析）中配置“搜索引擎优化”数据'
+              , url: 'https://support.google.com/analytics/answer/1308621?hl=zh-Hans'
             }
             , {
               label: 'Using the SEO Reports (Google)'
@@ -267,8 +267,14 @@
               , url: 'http://www.bing.com/toolbox/seo-analyzer'
             }
           ]
+          ,books:[
+            {
+              name: 'Google Analytics网站分析与优化技巧',
+              url: 'http://www.amazon.cn/%E6%B5%81%E9%87%8F%E7%9A%84%E7%A7%98%E5%AF%86-Google-Analytics%E7%BD%91%E7%AB%99%E5%88%86%E6%9E%90%E4%B8%8E%E4%BC%98%E5%8C%96%E6%8A%80%E5%B7%A7-%E5%85%8B%E5%88%A9%E5%A4%AB%E9%A1%BF/dp/B00D3OND5Y/ref=sr_1_3?ie=UTF8&qid=1424223920&sr=8-3&keywords=%E7%BD%91%E7%AB%99%E5%88%86%E6%9E%90'
+            }
+          ]
           ,
-          description: 'Analytics provide performance data about a website as well as information that is usable to measure the success of SEO.'
+          description: '分析网站的数据，以提高SEO的成功率'
           ,
           stats: [
             {
@@ -308,7 +314,7 @@
               label: 'Douglas Crockford on Javascript'
               , url: 'http://javascript.crockford.com/'
             }
-          ]
+        ]
           ,
           description: 'JavaScript is the dominant language for client-side programming.  It executes in the user&rsquo;s browser to manipulate the HTML document after it has loaded.  This may be as simple as showing hidden elements, or more advanced like contacting the server to load more data.'
           ,
