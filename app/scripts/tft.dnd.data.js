@@ -89,7 +89,7 @@
           ,
           description: 'CSS能够对网页中的对象的位置排版进行像素级的精确控制，支持几乎所有的字体字号样式，拥有对网页对象和模型样式编辑的能力，并能够进行初步交互设计。'
           ,
-          talents: ['Stylish']
+          talents: ['时尚']
         },
         {
           id: 3
@@ -116,15 +116,21 @@
               , url: 'http://learnboost.github.io/stylus/'
             }
           ]
+          , books: [
+          {
+            name: 'Sass与Compass实战',
+            url: 'http://www.amazon.cn/Sass%E4%B8%8ECompass%E5%AE%9E%E6%88%98-%E5%B0%BC%E5%BE%B7%E5%85%B0/dp/B00K5KNZSE/ref=sr_1_1?ie=UTF8&qid=1424221572&sr=8-1&keywords=SASS'
+          }
+        ]
           ,
           maxPoints: 2
           ,
           rankDescriptions: [
-            'You are familiar with variables and nesting.'
-            , 'You can use advanced tools like mix-ins and sometimes write your own.'
+            '熟悉变量和嵌套'
+            , '可以使用高级工具写你自己的代码，如mix-ins'
           ]
           ,
-          description: 'Preprocessors like LESS and SASS help you write more structured and efficient CSS by adding features like variables, functions, and nesting.'
+          description: 'LESS与SASS可以帮助你用变量、函数和嵌套编写更加结构化和高效的CSS'
           ,
           stats: [
             {
