@@ -200,7 +200,7 @@
         {
           id: 6
           ,
-          title: '搜索引擎优化(Search Engine Optimization )'
+          title: '搜索引擎优化'
           ,
           dependsOn: [1]
           ,
@@ -217,9 +217,19 @@
               label: 'Bing - Webmaster Tools'
               , url: 'http://www.bing.com/toolbox/webmaster'
             }
+          ],
+          books: [
+            {
+              name: 'SEO艺术',
+              url: 'http://www.amazon.cn/SEO%E8%89%BA%E6%9C%AF-%E5%9F%83%E9%87%8C%E5%85%8B%E2%80%A2%E6%81%A9%E5%90%89/dp/B007VEF454/ref=sr_1_5?ie=UTF8&qid=1424223774&sr=8-5&keywords=SEO'
+            },
+            {
+              name: 'SEO深度解析:全面挖掘搜索引擎优化的核心秘密',
+              url: 'http://www.amazon.cn/SEO%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90-%E5%85%A8%E9%9D%A2%E6%8C%96%E6%8E%98%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96%E7%9A%84%E6%A0%B8%E5%BF%83%E7%A7%98%E5%AF%86-%E7%97%9E%E5%AD%90%E7%91%9E/dp/B00IRQVFSU/ref=sr_1_2?ie=UTF8&qid=1424223774&sr=8-2&keywords=SEO'
+            }
           ]
           ,
-          description: 'The process of affecting the ranking/visibility of a website or web page in a search engines results.'
+          description: 'SEO是指从自然搜索结果获得网站流量的技术和过程。'
           ,
           stats: [
             {
