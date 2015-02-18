@@ -2,6 +2,8 @@
 
 > Web技能树
 
+![Screen shot](./screenshot.png)
+
 ## License
 
 © 2015 [Phodal Huang](http://www.phodal.com). This code is distributed under the MIT license. See `LICENSE.txt` in this directory.
