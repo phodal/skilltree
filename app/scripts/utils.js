@@ -2,8 +2,8 @@
 
 window.jiathis_config = {
   url: window.location.href,
-  summary: "快来试试。",
-  title: "我是 Level 1 Web Developer #Web技能树#",
+  summary: '快来试试。',
+  title: '我是 Level 1 Web Developer #Web技能树#',
   showClose: true,
   shortUrl: true,
   hideMore: false
