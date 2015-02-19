@@ -231,9 +231,30 @@
           dependsOn: [8],
           maxPoints: 2,
           rankDescriptions: [
-            'You tap into libraries like jQuery, MooTools, Prototype, Dojo, and YUI to streamline your work.', 'You use frameworks like KnockoutJS, Ember.js, AngularJS, and Backbone.js to structure complex frontend functionality.'
+            '可以熟练使用jQuery, MooTools, Prototype, Dojo, YUI等框架简单工作',
+            '可以熟练使用KnockoutJS, Ember.js, AngularJS, 及Backbone.js框架完成复杂的前端功能'
           ],
-          description: 'Once you&rsquo;re comfortable with the JavaScript language, there&rsquo;s a multitude of libraries and frameworks to accomplish common tasks and enhance your development.',
+          books: [{
+            book_name: '用AngularJS开发下一代Web应用',
+            url: 'http://www.amazon.cn/%E7%94%A8AngularJS%E5%BC%80%E5%8F%91%E4%B8%8B%E4%B8%80%E4%BB%A3Web%E5%BA%94%E7%94%A8-%E6%A0%BC%E6%9E%97/dp/B00G3XSBG8/ref=sr_1_6?ie=UTF8&qid=1424310373&sr=8-6&keywords=backbone'
+          },{
+            book_name: '单页Web应用:JavaScript从前端到后端',
+            url: 'http://www.amazon.cn/%E5%8D%95%E9%A1%B5Web%E5%BA%94%E7%94%A8-JavaScript%E4%BB%8E%E5%89%8D%E7%AB%AF%E5%88%B0%E5%90%8E%E7%AB%AF-%E7%B1%B3%E5%8F%AF%E5%A4%AB%E6%96%AF%E5%9F%BA/dp/B00NN8GJGA/ref=sr_1_5?ie=UTF8&qid=1424310373&sr=8-5&keywords=backbone'
+          },{
+            book_name: '精通jQuery',
+            url: 'http://www.amazon.cn/%E5%9B%BE%E7%81%B5%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%9B%E4%B9%A6-%E7%B2%BE%E9%80%9AjQuery-%E5%BC%97%E9%87%8C%E6%9B%BC/dp/B00N42VIW0/ref=sr_1_3?ie=UTF8&qid=1424310743&sr=8-3&keywords=jquery'
+          }],
+          links: [{
+            label: '一步步搭建JavaScript框架',
+            url: 'http://www.phodal.com/blog/build-javascript-framework-init-project/'
+          }, {
+            label: 'Backbone.js',
+            url: 'http://backbonejs.org/'
+          }, {
+            label: 'jQuery',
+            url: 'http://jquery.com/'
+          }],
+          description: '当你熟悉了JavaScript之后，会发现有大量的库和框架可以完成相同的任务，加速你的开发',
           stats: [{
             title: 'Dexterity',
             value: 2
