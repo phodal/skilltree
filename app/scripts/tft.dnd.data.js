@@ -213,6 +213,19 @@
             label: 'Douglas Crockford on Javascript',
             url: 'http://javascript.crockford.com/'
           }],
+          books: [{
+            book_name: 'JavaScript高级程序设计',
+            url: 'http://www.amazon.cn/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-%E6%B3%BD%E5%8D%A1%E6%96%AF/dp/B007OQQVMY/ref=sr_1_1?ie=UTF8&qid=1424309806&sr=8-1&keywords=javascript'
+          },{
+            book_name: 'JavaScript语言精粹',
+            url: 'http://www.amazon.cn/JavaScript%E8%AF%AD%E8%A8%80%E7%B2%BE%E7%B2%B9-%E9%81%93%E6%A0%BC%E6%8B%89%E6%96%AF%E2%80%A2%E5%85%8B%E7%BD%97%E5%85%8B%E7%A6%8F%E5%BE%B7/dp/B0097CON2S/ref=sr_1_4?ie=UTF8&qid=1424309806&sr=8-4&keywords=javascript'
+          },{
+            book_name: 'JavaScript DOM编程艺术',
+            url: 'http://www.amazon.cn/JavaScript-DOM%E7%BC%96%E7%A8%8B%E8%89%BA%E6%9C%AF-%E5%9F%BA%E6%80%9D/dp/B004VJM5KE/ref=sr_1_5?ie=UTF8&qid=1424309806&sr=8-5&keywords=javascript'
+          },{
+            book_name: 'Effective JavaScript:编写高质量JavaScript代码的68个有效方法',
+            url: 'http://www.amazon.cn/Effective-JavaScript-%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FJavaScript%E4%BB%A3%E7%A0%81%E7%9A%8468%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95-%E8%B5%AB%E5%B0%94%E6%9B%BC/dp/B00GMXI1QY/ref=sr_1_13?ie=UTF8&qid=1424309806&sr=8-13&keywords=javascript'
+          }],
           description: 'JavaScript is the dominant language for client-side programming.  It executes in the user&rsquo;s browser to manipulate the HTML document after it has loaded.  This may be as simple as showing hidden elements, or more advanced like contacting the server to load more data.',
           stats: [{
             title: 'Dexterity',
