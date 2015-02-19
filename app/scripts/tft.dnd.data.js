@@ -201,14 +201,8 @@
           title: 'Javascript',
           dependsOn: [1],
           links: [{
-            label: 'JavaScript Tutorial',
-            url: 'http://www.htmldog.com/guides/javascript/'
-          }, {
-            label: '无处不在的javascript',
-            url: 'http://www.phodal.com/blog/be-a-geek-chapter-2-anywhere-javascript-1/'
-          }, {
-            label: 'List of Videos for Beginner JavaScript',
-            url: 'http://thenewboston.org/list.php?cat=10'
+            label: 'Javascript 匿名函数与封装',
+            url: 'http://www.phodal.com/blog/javascript-anonymous-function-encapsulation/'
           }, {
             label: 'Douglas Crockford on Javascript',
             url: 'http://javascript.crockford.com/'
@@ -226,7 +220,7 @@
             book_name: 'Effective JavaScript:编写高质量JavaScript代码的68个有效方法',
             url: 'http://www.amazon.cn/Effective-JavaScript-%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FJavaScript%E4%BB%A3%E7%A0%81%E7%9A%8468%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95-%E8%B5%AB%E5%B0%94%E6%9B%BC/dp/B00GMXI1QY/ref=sr_1_13?ie=UTF8&qid=1424309806&sr=8-13&keywords=javascript'
           }],
-          description: 'JavaScript is the dominant language for client-side programming.  It executes in the user&rsquo;s browser to manipulate the HTML document after it has loaded.  This may be as simple as showing hidden elements, or more advanced like contacting the server to load more data.',
+          description: 'JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。',
           stats: [{
             title: 'Dexterity',
             value: 3
