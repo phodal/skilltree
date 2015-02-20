@@ -7,6 +7,7 @@
 .skill[data-skill-id="7"] .icon,
 .skill[data-skill-id="8"] .icon,
 .skill[data-skill-id="9"] .icon,
+.skill[data-skill-id="17"] .icon,
 .skill[data-skill-id="20"] .icon,
 .skill[data-skill-id="21"] .icon,
 .skill[data-skill-id="24"] .icon,
@@ -53,8 +54,20 @@
   height: 60px;
 }
 
+.skill[data-skill-id="8"] .icon{
+  background-position: 0 -180px;
+  width: 60px;
+  height: 60px;
+}
+
 .skill[data-skill-id="9"] .icon {
   background-position: -180px -120px;
+  width: 60px;
+  height: 60px;
+}
+
+.skill[data-skill-id="17"] .icon {
+  background-position: -120px -60px;
   width: 60px;
   height: 60px;
 }
@@ -80,18 +93,6 @@
 
 .skill[data-skill-id="25"] .icon {
   background-position: -60px -120px;
-  width: 60px;
-  height: 60px;
-}
-
-.sprite-logo-gmap {
-  background-position: -120px -60px;
-  width: 60px;
-  height: 60px;
-}
-
-.skill[data-skill-id="8"] .icon{
-  background-position: 0 -180px;
   width: 60px;
   height: 60px;
 }
