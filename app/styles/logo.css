@@ -1,101 +1,77 @@
 ﻿/* glue: 0.9.4 hash: cd58707e33 */
-        .sprite-logo-seo,
-.sprite-logo-sass,
-.sprite-logo-photoshop,
-.sprite-logo-jquery,
-.sprite-logo-html,
-.sprite-logo-gmap,
-.sprite-logo-ga,
-.sprite-logo-deploy,
-.sprite-logo-css,
-.sprite-logo-axure,
-.sprite-logo-apache {
-            background-image: url('logo.png');
-            background-repeat: no-repeat;
-        }
-        
-        .sprite-logo-seo {
-            background-position: 0 0;
-            width: 60px;
-            height: 60px;
-        }
-        
-        .sprite-logo-sass {
-            background-position: -60px 0;
-            width: 60px;
-            height: 60px;
-        }
-        
-        .sprite-logo-photoshop {
-            background-position: 0 -60px;
-            width: 60px;
-            height: 60px;
-        }
-        
-        .sprite-logo-jquery {
-            background-position: -60px -60px;
-            width: 60px;
-            height: 60px;
-        }
-        
-        .sprite-logo-html {
-            background-position: -120px 0;
-            width: 60px;
-            height: 60px;
-        }
-        
-        .sprite-logo-gmap {
-            background-position: -120px -60px;
-            width: 60px;
-            height: 60px;
-        }
-        
-        .sprite-logo-ga {
-            background-position: 0 -120px;
-            width: 60px;
-            height: 60px;
-        }
-        
-        .sprite-logo-deploy {
-            background-position: -60px -120px;
-            width: 60px;
-            height: 60px;
-        }
-        
-        .sprite-logo-css {
-            background-position: -120px -120px;
-            width: 60px;
-            height: 60px;
-        }
-        
-        .sprite-logo-axure {
-            background-position: -180px 0;
-            width: 60px;
-            height: 60px;
-        }
-        
-        .sprite-logo-apache {
-            background-position: -180px -60px;
-            width: 60px;
-            height: 60px;
-        }
-        
-        @media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0), screen and (-o-min-device-pixel-ratio: 100/100), screen and (min-device-pixel-ratio: 1.0), screen and (min-resolution: 1.0dppx) {
-            .sprite-logo-seo,
-    .sprite-logo-sass,
-    .sprite-logo-photoshop,
-    .sprite-logo-jquery,
-    .sprite-logo-html,
-    .sprite-logo-gmap,
-    .sprite-logo-ga,
-    .sprite-logo-deploy,
-    .sprite-logo-css,
-    .sprite-logo-axure,
-    .sprite-logo-apache {
-                background-image: url('logo.png');
-                -webkit-background-size: 240px 180px;
-                -moz-background-size: 240px 180px;
-                background-size: 240px 180px;
-            }
-        }
-        
+.skill[data-skill-id="1"] .icon,
+.skill[data-skill-id="6"] .icon,
+.skill[data-skill-id="7"] .icon,
+.skill[data-skill-id="20"] .icon,
+.skill[data-skill-id="21"] .icon,
+.skill[data-skill-id="24"] .icon
+{
+  background-image: url('logo.png');
+  background-repeat: no-repeat;
+}
+
+.skill[data-skill-id="6"] .icon {
+  background-position: 0 0;
+  width: 60px;
+  height: 60px;
+}
+
+.skill[data-skill-id="3"] .icon {
+  background-position: -60px 0;
+  width: 60px;
+  height: 60px;
+}
+
+.skill[data-skill-id="20"] .icon  {
+  background-position: 0 -60px;
+  width: 60px;
+  height: 60px;
+}
+
+.skill[data-skill-id="5"] .icon {
+  background-position: -60px -60px;
+  width: 60px;
+  height: 60px;
+}
+
+.skill[data-skill-id="1"] .icon {
+  background-position: -120px 0;
+  width: 60px;
+  height: 60px;
+}
+
+.sprite-logo-gmap {
+  background-position: -120px -60px;
+  width: 60px;
+  height: 60px;
+}
+
+.skill[data-skill-id="7"] .icon {
+  background-position: 0 -120px;
+  width: 60px;
+  height: 60px;
+}
+
+.sprite-logo-deploy {
+  background-position: -60px -120px;
+  width: 60px;
+  height: 60px;
+}
+
+.skill[data-skill-id="2"] .icon {
+  background-position: -120px -120px;
+  width: 60px;
+  height: 60px;
+}
+
+.skill[data-skill-id="21"] .icon {
+  background-position: -180px 0;
+  width: 60px;
+  height: 60px;
+}
+
+.skill[data-skill-id="24"] .icon {
+  background-position: -180px -60px;
+  width: 60px;
+  height: 60px;
+}
