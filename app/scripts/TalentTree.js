@@ -1,4 +1,5 @@
-define(['lib/knockout'], function(ko){
+define(['lib/knockout', 'scripts/TalentData', 'scripts/Book', 'scripts/Link'],
+  function(ko, TalentData, Book, Link){
 
   window.jiathis_config = {
     url: window.location.href,
@@ -356,28 +357,6 @@ define(['lib/knockout'], function(ko){
         self.points(self.points() - 1);
       }
     };
-
-    return self;
-  };
-  //VM for a simple hyperlink
-  var Link = function (_e) {
-    var e = _e || {};
-    var self = function () {
-    };
-
-    self.label = e.label || (e.url || 'Learn more');
-    self.url = e.url || 'javascript:void(0)';
-
-    return self;
-  };
-
-  var Book = function (_e) {
-    var e = _e || {};
-    var self = function () {
-    };
-
-    self.book_name = e.book_name || (e.url || 'Learn more');
-    self.url = e.url || 'javascript:void(0)';
 
     return self;
   };
