@@ -637,6 +637,6 @@ define([], function () {
 
     ]
   }
-  return data
+  return data;
 });
 
