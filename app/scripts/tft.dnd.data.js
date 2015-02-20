@@ -291,11 +291,8 @@
           title: '服务端框架',
           dependsOn: [11],
           links: [{
-            label: 'Comparison of web application frameworks',
+            label: 'Web应用程序框架比较',
             url: 'http://en.wikipedia.org/wiki/Comparison_of_web_application_frameworks'
-          }, {
-            label: 'Web development - server side coding',
-            url: 'http://en.wikipedia.org/wiki/Web_development#Server_side_coding'
           }],
           description: 'These are software frameworks and collection of packages or modules that allow developers to write applications or services without having to handle the overhead of common activities and lower level details, such as session management, database access, etc.',
           stats: [{
