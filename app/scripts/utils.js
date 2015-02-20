@@ -23,6 +23,7 @@ function namespace(namespaceString) {
 
   return parent;
 }
+
 function prettyJoin(array) {
   'use strict';
   if (array.length > 2) {
@@ -30,6 +31,7 @@ function prettyJoin(array) {
   }
   return array.join(' and ');
 }
+
 ko.bindingHandlers.rightClick = {
   init: function (element, valueAccessor) {
     'use strict';
@@ -52,6 +54,7 @@ ko.bindingHandlers.middleClick = {
     });
   }
 };
+
 function getInternetExplorerVersion() {
   'use strict';
   var rv = -1; // Return value assumes failure.
@@ -64,6 +67,7 @@ function getInternetExplorerVersion() {
   }
   return rv;
 }
+
 function isInvalidIEVersion() {
   'use strict';
   var ver = getInternetExplorerVersion();
