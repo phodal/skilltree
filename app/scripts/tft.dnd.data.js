@@ -531,11 +531,12 @@
           title: '用户测试',
           dependsOn: [22],
           links: [{
-            label: 'My big list of 24 Web Site Usability Testing Tools',
-            url: 'http://www.usefulusability.com/24-usability-testing-tools/'
-          }, {
-            label: 'Usability Testing Wiki',
+            label: '可用性测试',
             url: 'http://en.wikipedia.org/wiki/Usability_testing'
+          }],
+          books: [{
+            book_name: '用户体验要素:以用户为中心的产品设计',
+            url: 'http://www.amazon.cn/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%A6%81%E7%B4%A0-%E4%BB%A5%E7%94%A8%E6%88%B7%E4%B8%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1-%E5%8A%A0%E7%91%9E%E7%89%B9/dp/B0056E8VDS/ref=sr_1_2?ie=UTF8&qid=1424396126&sr=8-2&keywords=%E7%94%A8%E6%88%B7'
           }],
           description: 'It is a technique, also known as usability testing, that is used to evaluate a website by testing it on users.',
           stats: [{
