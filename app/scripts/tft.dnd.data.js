@@ -553,17 +553,25 @@
           id: 24,
           title: '服务器管理',
           links: [{
-            label: 'Comparison of web server software Wiki',
+            label: 'Web服务器比较',
             url: 'http://en.wikipedia.org/wiki/Comparison_of_web_server_software'
-          }, {
-            label: 'Apache mod_rewrite - Apache HTTP Server',
-            url: 'http://httpd.apache.org/docs/2.4/rewrite/'
+          }],
+          books: [{
+            book_name: '构建高性能Web站点',
+            url: 'http://www.amazon.cn/%E6%9E%84%E5%BB%BA%E9%AB%98%E6%80%A7%E8%83%BDWeb%E7%AB%99%E7%82%B9-%E9%83%AD%E6%AC%A3/dp/B008D4S4TO/ref=sr_1_1?s=books&ie=UTF8&qid=1424396341&sr=1-1&keywords=%E6%9E%84%E5%BB%BA%E9%AB%98%E6%80%A7%E8%83%BDweb%E7%AB%99%E7%82%B9'
+          },{
+            book_name: '深入理解Nginx:模块开发与架构解析',
+            url: 'http://www.amazon.cn/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Nginx-%E6%A8%A1%E5%9D%97%E5%BC%80%E5%8F%91%E4%B8%8E%E6%9E%B6%E6%9E%84%E8%A7%A3%E6%9E%90-%E9%99%B6%E8%BE%89/dp/B00BXTR5O6/ref=sr_1_9?ie=UTF8&qid=1424396316&sr=8-9&keywords=%E9%AB%98%E6%80%A7%E8%83%BD%E6%9C%8D%E5%8A%A1%E5%99%A8'
+          },{
+            book_name: 'Web性能权威指南',
+            url: 'http://www.amazon.cn/Web%E6%80%A7%E8%83%BD%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E6%A0%BC%E9%87%8C%E9%AB%98%E5%88%A9%E5%85%8B/dp/B00JMKWHFU/ref=sr_1_1?ie=UTF8&qid=1424396385&sr=8-1&keywords=web%E6%80%A7%E8%83%BD'
           }],
           maxPoints: 2,
           rankDescriptions: [
-            'You are capable of setting up your application in a new environment.', 'You are familiar with server-side URL rewriting tools like mod_rewrite.'
+            '能够在新的环境(操作系统)中搭建你的应用',
+            '熟悉HTTP服务器模块的编译、使用'
           ],
-          description: 'Even the simplest web applications will require a server to run them.  There are several popular and fully-featured web servers to choose from, though your application\'s server-side programming language may limit your options.  Learning to manage and configure your web server will help you keep your site up and running smoothly.',
+          description: '无论是哪种类型的语言都需要一个Web服务器来运行，不同语言可能会限制Web服务器，学习Web服务器的配置将会帮助网站更好的运行。',
           stats: [{
             title: 'Fortitude',
             value: 3
