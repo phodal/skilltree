@@ -2,6 +2,10 @@
 
 > Web技能树
 
+##Compile Sprite
+
+    glue logo -o app/styles
+
 ![Screen shot](./screenshot.png)
 
 ## License
