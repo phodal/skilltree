@@ -322,7 +322,7 @@
           });
           return '学习 ' + prettyJoin(s) + ' 才能解锁.';
         } else if (self.canAddPoints()) {
-          return '点击添加分数';
+          return '点击添加技能点';
         }
         return '';
       });
