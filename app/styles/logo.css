@@ -5,6 +5,7 @@
 .skill[data-skill-id="5"] .icon,
 .skill[data-skill-id="6"] .icon,
 .skill[data-skill-id="7"] .icon,
+.skill[data-skill-id="8"] .icon,
 .skill[data-skill-id="9"] .icon,
 .skill[data-skill-id="20"] .icon,
 .skill[data-skill-id="21"] .icon,
@@ -85,6 +86,12 @@
 
 .sprite-logo-gmap {
   background-position: -120px -60px;
+  width: 60px;
+  height: 60px;
+}
+
+.skill[data-skill-id="8"] .icon{
+  background-position: 0 -180px;
   width: 60px;
   height: 60px;
 }
