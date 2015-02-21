@@ -1,5 +1,6 @@
 /* global namespace */
 define([], function () {
+  'use strict';
   var data = {
     skills: [{
       id: 1,

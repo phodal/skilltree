@@ -1,4 +1,5 @@
 define([], function() {
+  'use strict';
   var Book = function (_e) {
     var e = _e || {};
     var self = this;

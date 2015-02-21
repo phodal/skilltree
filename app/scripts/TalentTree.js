@@ -1,6 +1,6 @@
 define(['lib/knockout', 'scripts/TalentData', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
   function(ko, TalentData, Book, Link, Skill){
-
+  'use strict';
   window.jiathis_config = {
     url: window.location.href,
     summary: '快来试试。',

@@ -1,14 +1,13 @@
 define(['lib/knockout', 'scripts/Book', 'scripts/Link'],
   function (ko, Book, Link) {
-
+    'use strict';
     function prettyJoin(array) {
-      'use strict';
       if (array.length > 2) {
         array = [array.slice(0, array.length - 1).join(', '), array[array.length - 1]];
       }
       return array.join(' and ');
     }
-    
+
     var Skill = function (_e) {
       var e = _e || {};
       var self = function () {

@@ -15,5 +15,11 @@
   "strict": true,
   "jquery": true,
   "laxcomma": true,
-  "scripturl":true
+  "scripturl": true,
+  "predef": [
+    "require",
+    "define",
+    "escape",
+    "console"
+  ]
 }
