@@ -12,8 +12,7 @@ define(['lib/knockout', 'scripts/TalentData', 'scripts/Book', 'scripts/Link', 's
 
   var TalentTree = function(_e){
     var e = _e || {};
-    var self = function () {
-    };
+    var self = this;
 
     var asciiOffset = 96;
     var hashDelimeter = '_';
