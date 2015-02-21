@@ -10,8 +10,7 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link'],
 
     var Skill = function (_e) {
       var e = _e || {};
-      var self = function () {
-      };
+      var self = this;
 
       self.id = e.id || 0;
       self.title = e.title || 'Unknown Skill';
