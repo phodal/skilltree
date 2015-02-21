@@ -15,10 +15,10 @@ define([], function () {
         url: 'http://www.phodal.com/blog/be-a-geek-chapter-1-anywhere-html/'
       }],
       books: [{
-        book_name: 'Head First HTML与CSS',
+        label: 'Head First HTML与CSS',
         url: 'http://www.amazon.cn/Head-First-HTML%E4%B8%8ECSS-%E7%BD%97%E5%B8%83%E6%A3%AE/dp/B00FF3P8FY/ref=sr_1_1?ie=UTF8&qid=1424182950&sr=8-1&keywords=html'
       }, {
-        book_name: '图灵程序设计丛书:HTML5权威指南',
+        label: '图灵程序设计丛书:HTML5权威指南',
         url: 'http://www.amazon.cn/%E5%9B%BE%E7%81%B5%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%9B%E4%B9%A6-HTML5%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E5%BC%97%E9%87%8C%E6%9B%BC/dp/B00H706BIG/ref=sr_1_4?ie=UTF8&qid=1424220765&sr=8-4&keywords=html'
       }],
       maxPoints: 2,
@@ -44,13 +44,13 @@ define([], function () {
         url: 'http://caniuse.com/#cats=CSS'
       }],
       books: [{
-        book_name: 'Head First HTML与CSS',
+        label: 'Head First HTML与CSS',
         url: 'http://www.amazon.cn/Head-First-HTML%E4%B8%8ECSS-%E7%BD%97%E5%B8%83%E6%A3%AE/dp/B00FF3P8FY/ref=sr_1_1?ie=UTF8&qid=1424182950&sr=8-1&keywords=html'
       }, {
-        book_name: 'CSS权威指南',
+        label: 'CSS权威指南',
         url: 'http://www.amazon.cn/CSS%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E8%BF%88%E8%80%B6/dp/B0011F5SIC/ref=sr_1_1?ie=UTF8&qid=1424220922&sr=8-1&keywords=css'
       }, {
-        book_name: 'CSS禅意花园',
+        label: 'CSS禅意花园',
         url: 'http://www.amazon.cn/CSS%E7%A6%85%E6%84%8F%E8%8A%B1%E5%9B%AD-%E8%B0%A2%E4%BC%8A/dp/B008HN791U/ref=sr_1_3?ie=UTF8&qid=1424220922&sr=8-3&keywords=css'
       }],
       maxPoints: 2,
@@ -81,7 +81,7 @@ define([], function () {
         url: 'http://learnboost.github.io/stylus/'
       }],
       books: [{
-        book_name: 'Sass与Compass实战',
+        label: 'Sass与Compass实战',
         url: 'http://www.amazon.cn/Sass%E4%B8%8ECompass%E5%AE%9E%E6%88%98-%E5%B0%BC%E5%BE%B7%E5%85%B0/dp/B00K5KNZSE/ref=sr_1_1?ie=UTF8&qid=1424221572&sr=8-1&keywords=SASS'
       }],
       maxPoints: 2,
@@ -149,10 +149,10 @@ define([], function () {
           url: 'http://www.bing.com/toolbox/webmaster'
         }],
         books: [{
-          book_name: 'SEO艺术',
+          label: 'SEO艺术',
           url: 'http://www.amazon.cn/SEO%E8%89%BA%E6%9C%AF-%E5%9F%83%E9%87%8C%E5%85%8B%E2%80%A2%E6%81%A9%E5%90%89/dp/B007VEF454/ref=sr_1_5?ie=UTF8&qid=1424223774&sr=8-5&keywords=SEO'
         }, {
-          book_name: 'SEO深度解析:全面挖掘搜索引擎优化的核心秘密',
+          label: 'SEO深度解析:全面挖掘搜索引擎优化的核心秘密',
           url: 'http://www.amazon.cn/SEO%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90-%E5%85%A8%E9%9D%A2%E6%8C%96%E6%8E%98%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96%E7%9A%84%E6%A0%B8%E5%BF%83%E7%A7%98%E5%AF%86-%E7%97%9E%E5%AD%90%E7%91%9E/dp/B00IRQVFSU/ref=sr_1_2?ie=UTF8&qid=1424223774&sr=8-2&keywords=SEO'
         }],
         description: 'SEO是指从自然搜索结果获得网站流量的技术和过程。',
@@ -181,7 +181,7 @@ define([], function () {
           url: 'http://www.bing.com/toolbox/seo-analyzer'
         }],
         books: [{
-          book_name: 'Google Analytics网站分析与优化技巧',
+          label: 'Google Analytics网站分析与优化技巧',
           url: 'http://www.amazon.cn/%E6%B5%81%E9%87%8F%E7%9A%84%E7%A7%98%E5%AF%86-Google-Analytics%E7%BD%91%E7%AB%99%E5%88%86%E6%9E%90%E4%B8%8E%E4%BC%98%E5%8C%96%E6%8A%80%E5%B7%A7-%E5%85%8B%E5%88%A9%E5%A4%AB%E9%A1%BF/dp/B00D3OND5Y/ref=sr_1_3?ie=UTF8&qid=1424223920&sr=8-3&keywords=%E7%BD%91%E7%AB%99%E5%88%86%E6%9E%90'
         }],
         description: '分析网站的数据，以提高SEO的成功率',
@@ -207,16 +207,16 @@ define([], function () {
           url: 'http://javascript.crockford.com/'
         }],
         books: [{
-          book_name: 'JavaScript高级程序设计',
+          label: 'JavaScript高级程序设计',
           url: 'http://www.amazon.cn/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-%E6%B3%BD%E5%8D%A1%E6%96%AF/dp/B007OQQVMY/ref=sr_1_1?ie=UTF8&qid=1424309806&sr=8-1&keywords=javascript'
         }, {
-          book_name: 'JavaScript语言精粹',
+          label: 'JavaScript语言精粹',
           url: 'http://www.amazon.cn/JavaScript%E8%AF%AD%E8%A8%80%E7%B2%BE%E7%B2%B9-%E9%81%93%E6%A0%BC%E6%8B%89%E6%96%AF%E2%80%A2%E5%85%8B%E7%BD%97%E5%85%8B%E7%A6%8F%E5%BE%B7/dp/B0097CON2S/ref=sr_1_4?ie=UTF8&qid=1424309806&sr=8-4&keywords=javascript'
         }, {
-          book_name: 'JavaScript DOM编程艺术',
+          label: 'JavaScript DOM编程艺术',
           url: 'http://www.amazon.cn/JavaScript-DOM%E7%BC%96%E7%A8%8B%E8%89%BA%E6%9C%AF-%E5%9F%BA%E6%80%9D/dp/B004VJM5KE/ref=sr_1_5?ie=UTF8&qid=1424309806&sr=8-5&keywords=javascript'
         }, {
-          book_name: 'Effective JavaScript:编写高质量JavaScript代码的68个有效方法',
+          label: 'Effective JavaScript:编写高质量JavaScript代码的68个有效方法',
           url: 'http://www.amazon.cn/Effective-JavaScript-%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FJavaScript%E4%BB%A3%E7%A0%81%E7%9A%8468%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95-%E8%B5%AB%E5%B0%94%E6%9B%BC/dp/B00GMXI1QY/ref=sr_1_13?ie=UTF8&qid=1424309806&sr=8-13&keywords=javascript'
         }],
         description: 'JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。',
@@ -234,13 +234,13 @@ define([], function () {
           '可以熟练使用KnockoutJS, Ember.js, AngularJS, 及Backbone.js框架完成复杂的前端功能'
         ],
         books: [{
-          book_name: '用AngularJS开发下一代Web应用',
+          label: '用AngularJS开发下一代Web应用',
           url: 'http://www.amazon.cn/%E7%94%A8AngularJS%E5%BC%80%E5%8F%91%E4%B8%8B%E4%B8%80%E4%BB%A3Web%E5%BA%94%E7%94%A8-%E6%A0%BC%E6%9E%97/dp/B00G3XSBG8/ref=sr_1_6?ie=UTF8&qid=1424310373&sr=8-6&keywords=backbone'
         }, {
-          book_name: '单页Web应用:JavaScript从前端到后端',
+          label: '单页Web应用:JavaScript从前端到后端',
           url: 'http://www.amazon.cn/%E5%8D%95%E9%A1%B5Web%E5%BA%94%E7%94%A8-JavaScript%E4%BB%8E%E5%89%8D%E7%AB%AF%E5%88%B0%E5%90%8E%E7%AB%AF-%E7%B1%B3%E5%8F%AF%E5%A4%AB%E6%96%AF%E5%9F%BA/dp/B00NN8GJGA/ref=sr_1_5?ie=UTF8&qid=1424310373&sr=8-5&keywords=backbone'
         }, {
-          book_name: '精通jQuery',
+          label: '精通jQuery',
           url: 'http://www.amazon.cn/%E5%9B%BE%E7%81%B5%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%9B%E4%B9%A6-%E7%B2%BE%E9%80%9AjQuery-%E5%BC%97%E9%87%8C%E6%9B%BC/dp/B00N42VIW0/ref=sr_1_3?ie=UTF8&qid=1424310743&sr=8-3&keywords=jquery'
         }],
         links: [{
@@ -534,7 +534,7 @@ define([], function () {
           url: 'http://en.wikipedia.org/wiki/Usability_testing'
         }],
         books: [{
-          book_name: '用户体验要素:以用户为中心的产品设计',
+          label: '用户体验要素:以用户为中心的产品设计',
           url: 'http://www.amazon.cn/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%A6%81%E7%B4%A0-%E4%BB%A5%E7%94%A8%E6%88%B7%E4%B8%BA%E4%B8%AD%E5%BF%83%E7%9A%84%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1-%E5%8A%A0%E7%91%9E%E7%89%B9/dp/B0056E8VDS/ref=sr_1_2?ie=UTF8&qid=1424396126&sr=8-2&keywords=%E7%94%A8%E6%88%B7'
         }],
         description: 'It is a technique, also known as usability testing, that is used to evaluate a website by testing it on users.',
@@ -556,13 +556,13 @@ define([], function () {
           url: 'http://en.wikipedia.org/wiki/Comparison_of_web_server_software'
         }],
         books: [{
-          book_name: '构建高性能Web站点',
+          label: '构建高性能Web站点',
           url: 'http://www.amazon.cn/%E6%9E%84%E5%BB%BA%E9%AB%98%E6%80%A7%E8%83%BDWeb%E7%AB%99%E7%82%B9-%E9%83%AD%E6%AC%A3/dp/B008D4S4TO/ref=sr_1_1?s=books&ie=UTF8&qid=1424396341&sr=1-1&keywords=%E6%9E%84%E5%BB%BA%E9%AB%98%E6%80%A7%E8%83%BDweb%E7%AB%99%E7%82%B9'
         }, {
-          book_name: '深入理解Nginx:模块开发与架构解析',
+          label: '深入理解Nginx:模块开发与架构解析',
           url: 'http://www.amazon.cn/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Nginx-%E6%A8%A1%E5%9D%97%E5%BC%80%E5%8F%91%E4%B8%8E%E6%9E%B6%E6%9E%84%E8%A7%A3%E6%9E%90-%E9%99%B6%E8%BE%89/dp/B00BXTR5O6/ref=sr_1_9?ie=UTF8&qid=1424396316&sr=8-9&keywords=%E9%AB%98%E6%80%A7%E8%83%BD%E6%9C%8D%E5%8A%A1%E5%99%A8'
         }, {
-          book_name: 'Web性能权威指南',
+          label: 'Web性能权威指南',
           url: 'http://www.amazon.cn/Web%E6%80%A7%E8%83%BD%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E6%A0%BC%E9%87%8C%E9%AB%98%E5%88%A9%E5%85%8B/dp/B00JMKWHFU/ref=sr_1_1?ie=UTF8&qid=1424396385&sr=8-1&keywords=web%E6%80%A7%E8%83%BD'
         }],
         maxPoints: 2,

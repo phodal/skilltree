@@ -1,14 +1,9 @@
-define([], function() {
+define(['scripts/Doc'], function(Doc) {
   'use strict';
-  var Book = function (_e) {
-    var e = _e || {};
-    var self = this;
-
-    self.book_name = e.book_name || (e.url || 'Learn more');
-    self.url = e.url || 'javascript:void(0)';
-
-    return self;
-  };
+  function Book(_e) {
+    Doc.apply(this, arguments);
+  }
+  Book.prototype = new Doc();
 
   return Book;
 });
