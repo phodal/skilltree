@@ -23,7 +23,7 @@ require(['require', 'chai', 'chai-jquery', 'mocha', 'jquery'], function(require,
   mocha.setup('bdd');
 
   require([
-    'spec/test.js'
+    'spec/docs_test.js'
   ], function(require) {
     mocha.run();
   });
