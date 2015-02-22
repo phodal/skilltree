@@ -1,13 +1,6 @@
-define(['lib/knockout', 'scripts/Book', 'scripts/Link'],
-  function (ko, Book, Link) {
+define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Utils'],
+  function (ko, Book, Link, Utils) {
     'use strict';
-    function prettyJoin(array) {
-      if (array.length > 2) {
-        array = [array.slice(0, array.length - 1).join(', '), array[array.length - 1]];
-      }
-      return array.join(' and ');
-    }
-
     var Skill = function (_e) {
       var e = _e || {};
       var self = this;
@@ -81,7 +74,7 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link'],
               s.push(item.title);
             }
           });
-          return '学习 ' + prettyJoin(s) + ' 才能解锁.';
+          return '学习 ' + Utils.prettyJoin(s) + ' 才能解锁.';
         } else if (self.canAddPoints()) {
           return '点击添加技能点';
         }
