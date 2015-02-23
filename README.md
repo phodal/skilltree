@@ -19,7 +19,7 @@
   - 设计
   - UI
 
-![Screen shot](./screenshot.png)
+![Screen shot](./screenshot.jpg)
 
 #Skillock of Internet Of Things 
 
