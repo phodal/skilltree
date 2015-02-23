@@ -2,9 +2,39 @@
 
 > Web技能树
 
+##说明
+
+所需技能:
+
+ - 前端
+ - 后台
+ - 部署
+ - 数据库
+ 
+所需软技能:
+ 
+  - 分析
+  - 设计
+  - UI
+
 ![Screen shot](./screenshot.png)
 
 #Skillock of Internet Of Things 
+
+> 物联网技能树
+
+##说明
+
+所需技能:
+
+ - 硬件电路设计
+ - PCB设计
+ - Web技能树
+ 
+所需软技能:
+ 
+ - 分析
+ - 设计
 
 > 待续  
 
