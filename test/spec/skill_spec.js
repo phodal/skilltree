@@ -64,12 +64,18 @@ describe('Skill', function () {
       _skill.canAddPoints().should.equal(true);
       _skill.canRemovePoints().should.equal(false);
       _skill.talentSummary().should.equal('');
+    });
+    
+    it('should parse books & links', function () {
+      var _skill = new Skill(html_skill);
       _skill.links[0].label.should.equal('无处不在的html');
       _skill.links[0].url.should.equal('http://www.phodal.com/blog/be-a-geek-chapter-1-anywhere-html/');
       _skill.books[0].label.should.equal('Head First HTML与CSS');
       _skill.books[0].url.should.equal('http://www.phodal.com');
     });
+  });
 
+  describe('Skill Points Test', function () {
     it('should can not add point after add 2 points', function () {
       var _skill = new Skill(html_skill);
       _skill.addPoint();
