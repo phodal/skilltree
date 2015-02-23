@@ -1,12 +1,12 @@
-#Skill Tree of Web Front-End
+#Skillock of Web
 
 > Web技能树
 
-##Compile Sprite
-
-    glue logo -o app/styles
-
 ![Screen shot](./screenshot.png)
+
+#Skillock of Internet Of Things 
+
+> 待续  
 
 ## License
 
