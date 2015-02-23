@@ -1,5 +1,7 @@
 #Skillock of Web
 
+[![Build Status](https://travis-ci.org/phodal/skillock.svg?branch=gh-pages)](https://travis-ci.org/phodal/skillock)
+
 > Web技能树
 
 ##说明
