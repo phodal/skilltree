@@ -100,8 +100,6 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Utils'],
           self.points(self.points() - 1);
         }
       };
-
-      return self;
     };
 
     return Skill;

@@ -210,7 +210,46 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
 
     //update the address bar when the hash changes
     function useLastHash() {
-      useHash(lastHash);
+      if (lastHash) {
+        self.newbMode();
+        var hashParts = lastHash.split(hashDelimeter);
+        if (hashParts[2]) {
+          self.portrait(Number(hashParts[2]));
+        } //use the segment after the second delimeter as the portrait index
+        if (hashParts[3]) {
+          self.avatarName(hashParts[3]);
+        } //use the segment after the third delimeter as the avatar name
+        var s = hashParts[1]; //use the segment after the first delimeter as the skill hash
+        var pairs = [];
+        //break the hash back down into skill/value pairs, one character at a time
+        var hashCharacters = s.split('');
+        for (var i = 0; i < hashCharacters.length; i++) {
+          if (!Number(hashCharacters[i])) { //if the current character is not a number,
+            var skill = getSkillById(hashCharacters[i].charCodeAt(0) - asciiOffset); //convert the character to a skill id and look it up
+            if (skill) {
+              var points = Number(hashCharacters[i + 1]) || 1; //default to 1 point if the number is not specified next
+              pairs.push({
+                skill: skill
+                , points: points
+              });
+            }
+          }
+        }
+        //cycle through the whole list, adding points where possible, until the list is depleted
+        var pointsWereAllocated = true; //flag
+        var handlePair = function (pair) {
+          if (!pair.wasAllocated && pair.skill.canAddPoints()) { //only add points once, and only where possible
+            pair.skill.points(Math.min(pair.skill.maxPoints, pair.points)); //don't add more points than allowed
+            pair.wasAllocated = true; //don't add this one again
+            pointsWereAllocated = true;
+          }
+        };
+        while (pointsWereAllocated) {
+          pointsWereAllocated = false; //assume the list is depleted by default
+          ko.utils.arrayForEach(pairs, handlePair);
+        }
+        do_update_hash = true;
+      }
     }
 
     function updateHash(s) {
