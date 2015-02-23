@@ -24,8 +24,9 @@ require(['require', 'chai', 'chai-jquery', 'mocha', 'jquery'], function(require,
 
   require([
     'spec/docs_test.js',
-    'spec/utils_test.js'
-  ], function(require) {
+    'spec/utils_test.js',
+    'spec/skill_test.js'
+  ], function(docs,utils,skill) {
     mocha.run();
   });
 
