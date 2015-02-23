@@ -61,8 +61,9 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
       ko.utils.arrayForEach(self.skills(), function (skill) {
         totalSkillPoints += skill.points();
       });
-      window.jiathis_config.title = '@phodal 我是Level ' + totalSkillPoints + ' Web Developer #Web技能树#';
-      return totalSkillPoints + 1;
+	    var totalLevel = totalSkillPoints + 1;
+      window.jiathis_config.title = '@phodal 我是Level ' + totalLevel + ' Web Developer #Web技能树#';
+      return totalLevel;
     });
     self.noPointsSpent = ko.computed(function () {
       return !Boolean(ko.utils.arrayFirst(self.skills(), function (skill) {
