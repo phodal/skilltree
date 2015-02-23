@@ -913,24 +913,6 @@
       "talents": [
         "Demigod"
       ]
-    },
-    {
-      "id": 27,
-      "title": "Internet Of Things",
-      "dependsOn": [
-        26
-      ],
-      "links": [
-        {
-          "label": "Join Skillock",
-          "url": "https://github.com/phodal/skillock"
-        }
-      ],
-      "maxPoints": 2,
-      "description": "On Development...",
-      "talents": [
-        ""
-      ]
     }
   ]
 }
