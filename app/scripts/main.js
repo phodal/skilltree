@@ -1,7 +1,9 @@
 require.config({
   baseUrl: 'app',
   paths:{
-    jquery: 'lib/jquery'
+    jquery: 'lib/jquery',
+    json: 'lib/json',
+    text: 'lib/text'
   }
 });
 
