@@ -8,7 +8,7 @@ define(function (require) {
   describe('Utils', function () {
     it('should return string with and when use array', function () {
 	    var dependencies = ["Web Design Mastery", "jQuery Effects"];
-      Utils.prettyJoin(dependencies).should.equal("Web Design Mastery and jQuery Effects")
+      Utils.prettyJoin(dependencies).should.equal("Web Design Mastery 和 jQuery Effects")
     });
   });
 });

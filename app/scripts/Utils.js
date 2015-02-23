@@ -4,7 +4,7 @@ define([''], function() {
     if (array.length > 2) {
       array = [array.slice(0, array.length - 1).join(', '), array[array.length - 1]];
     }
-    return array.join(' and ');
+    return array.join(' 和 ');
   }
 
   return {
