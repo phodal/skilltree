@@ -4,6 +4,11 @@
     "node": ">=0.10.0"
   },
   "devDependencies": {
+    "mocha": "2.1.0",
+    "requirejs": "2.1.16",
+    "chai": "~1.8.0",
+    "should": ">= 3.2.0",
+    "expect.js": ">= 0.3.1",
     "connect": "^3.0.1",
     "connect-livereload": "^0.5.0",
     "del": "^0.1.0",
