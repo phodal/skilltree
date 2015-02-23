@@ -3,6 +3,9 @@
   "engines": {
     "node": ">=0.10.0"
   },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
   "devDependencies": {
     "mocha": "2.1.0",
     "requirejs": "2.1.16",
@@ -14,6 +17,8 @@
     "del": "^0.1.0",
     "gulp": "^3.6.0",
     "gulp-mocha": "2.0.0",
+    "istanbul": "^0.3.0",
+    "mocha-lcov-reporter": "^0.0.1",
     "gulp-autoprefixer": "^1.0.1",
     "gulp-cache": "^0.2.2",
     "gulp-csso": "^0.2.6",
