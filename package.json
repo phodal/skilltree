@@ -13,6 +13,7 @@
     "connect-livereload": "^0.5.0",
     "del": "^0.1.0",
     "gulp": "^3.6.0",
+    "gulp-mocha": "2.0.0",
     "gulp-autoprefixer": "^1.0.1",
     "gulp-cache": "^0.2.2",
     "gulp-csso": "^0.2.6",
