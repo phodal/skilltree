@@ -9,7 +9,7 @@ require.config({
 
 require(['scripts/ko-bindings']);
 
-require(['lib/knockout', 'scripts/TalentTree', 'scripts/TalentData'], function(ko,TalentTree, TalentData) {
+require(['lib/knockout', 'scripts/TalentTree', 'json!../data/web.json'], function(ko,TalentTree, TalentData) {
   'use strict';
   var vm = new TalentTree(TalentData);
   ko.applyBindings(vm);
