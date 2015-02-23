@@ -425,6 +425,7 @@ li {
   background-position: 0 -10px;
 }
 [data-skill-id="7"] .skill-dependency,
+[data-skill-id="27"] .skill-dependency,
 [data-skill-id="9"] .skill-dependency,
 [data-skill-id="10"] .skill-dependency,
 [data-skill-id="12"] .skill-dependency,

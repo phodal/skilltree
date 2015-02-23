@@ -34,6 +34,7 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
     self.skills = ko.observableArray(ko.utils.arrayMap(e.skills, function (item) {
       return new Skill(item);
     }));
+
     function getSkillById(id) {
       return ko.utils.arrayFirst(self.skills(), function (item) {
         return item.id === id;

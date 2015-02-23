@@ -198,3 +198,7 @@
 .skill[data-skill-id="26"] .icon {
   background-position: -120px 0px;
 }
+.skill[data-skill-id="27"] {
+  left: 680px;
+  top: 520px;
+}
