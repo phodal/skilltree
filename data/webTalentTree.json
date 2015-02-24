@@ -680,11 +680,11 @@
     },
     {
       "id": 19,
-      "title": "图形设计",
+      "title": "平面设计",
       "maxPoints": 2,
       "rankDescriptions": [
-        "You can create a balanced, complementary layout with a clear message.",
-        "You understand how to create a strikingly unique design, which supports traditional design values as well as your underlying message."
+        "能创建传达明确信息的平衡,补充布局",
+        "了解如何创建一个引人注目的独特设计，它支持传统的设计值，以及您的基础信息。"
       ],
       "dependsOn": [
         18
@@ -707,7 +707,25 @@
           "url": "http://www.awwwards.com/"
         }
       ],
-      "description": "Graphic design is about aesthetics and usability. Good designs are inviting and easy to understand, by solid use of color, typography, balance, hierarchy and white space.",
+      "books": [
+        {
+          "label": "设计中的设计",
+          "url": "http://www.amazon.cn/%E8%AE%BE%E8%AE%A1%E4%B8%AD%E7%9A%84%E8%AE%BE%E8%AE%A1-%E5%8E%9F%E7%A0%94%E5%93%89/dp/B0046ZS8XG/ref=sr_1_1?ie=UTF8&qid=1424746851&sr=8-1&keywords=%E8%AE%BE%E8%AE%A1"
+        },
+        {
+          "label": "写给大家看的设计书",
+          "url": "http://www.amazon.cn/%E5%86%99%E7%BB%99%E5%A4%A7%E5%AE%B6%E7%9C%8B%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B9%A6-%E5%A8%81%E5%BB%89%E6%96%AF/dp/B00ALPRKG6/ref=sr_1_6?ie=UTF8&qid=1424746851&sr=8-6&keywords=%E8%AE%BE%E8%AE%A1"
+        },
+        {
+          "label": "超越平凡的平面设计:版式设计原理与应用",
+          "url": "http://www.amazon.cn/%E8%B6%85%E8%B6%8A%E5%B9%B3%E5%87%A1%E7%9A%84%E5%B9%B3%E9%9D%A2%E8%AE%BE%E8%AE%A1-%E7%89%88%E5%BC%8F%E8%AE%BE%E8%AE%A1%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8-%E9%BA%A6%E5%85%8B%E9%9F%A6%E5%BE%B7/dp/B0046UT08S/ref=sr_1_15?ie=UTF8&qid=1424746851&sr=8-15&keywords=%E8%AE%BE%E8%AE%A1"
+        },
+        {
+          "label": "点石成金:访客至上的网页设计秘笈",
+          "url": "http://www.amazon.cn/%E7%82%B9%E7%9F%B3%E6%88%90%E9%87%91-%E8%AE%BF%E5%AE%A2%E8%87%B3%E4%B8%8A%E7%9A%84%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1%E7%A7%98%E7%AC%88-Steve-Krug/dp/B0011BTJV8/ref=sr_1_27?ie=UTF8&qid=1424746981&sr=8-27&keywords=%E8%AE%BE%E8%AE%A1"
+        }
+      ],
+      "description": "平面设计是以“视觉”作为沟通和表现的方式，透过多种方式来创造和结合符号、图片和文字，借此作出用来传达想法或讯息的视觉表现。",
       "stats": [
         {
           "title": "Charisma",
@@ -715,7 +733,7 @@
         }
       ],
       "talents": [
-        "Artistic"
+        "艺术家"
       ]
     },
     {
@@ -758,7 +776,17 @@
           "url": "http://www.sitepoint.com/tools-prototyping-wireframing/"
         }
       ],
-      "description": "Modeling a new design without building all the underlying functionality is a fast and efficient way to convey ideas, test a new concept, and identify problems you didn't anticipate.",
+      "books": [
+        {
+          "label": "原型设计:实践者指南",
+          "url": "http://www.amazon.cn/%E5%8E%9F%E5%9E%8B%E8%AE%BE%E8%AE%A1-%E5%AE%9E%E8%B7%B5%E8%80%85%E6%8C%87%E5%8D%97-%E6%B2%83%E8%8F%B2%E5%B0%94/dp/B00AX1MC3Y/ref=sr_1_3?ie=UTF8&qid=1424746558&sr=8-3&keywords=%E5%8E%9F%E5%9E%8B"
+        },
+        {
+          "label": "Axure RP 6原型设计精髓",
+          "url": "http://www.amazon.cn/Axure-RP-6%E5%8E%9F%E5%9E%8B%E8%AE%BE%E8%AE%A1%E7%B2%BE%E9%AB%93-Ezra-Schwartz/dp/B00COWGEX4/ref=sr_1_16?ie=UTF8&qid=1424746558&sr=8-16&keywords=%E5%8E%9F%E5%9E%8B"
+        }
+      ],
+      "description": "产品原型可以概括的说是整个产品面市之前的一个框架设计。以网站注册作为例子,整个前期的交互设计流程图之后,就是原形开发的设计阶段,简单的来说是将页面的模块、原素、人机交互的形式，利用线框描述的方法，将产品脱离皮肤状态下更加具体跟生动的进行表达.",
       "stats": [
         {
           "title": "Wisdom",
@@ -770,12 +798,12 @@
         }
       ],
       "talents": [
-        "Conjurer"
+        "咒术师"
       ]
     },
     {
       "id": 22,
-      "title": "用户体验设计 Mastery",
+      "title": "精通用户体验设计",
       "dependsOn": [
         19,
         21
@@ -853,7 +881,7 @@
         }
       ],
       "talents": [
-        "监管"
+        "监管者"
       ]
     },
     {
