@@ -168,7 +168,7 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
           self.portrait(Number(hashParts[2]));
         } //use the segment after the second delimeter as the portrait index
         if (hashParts[3]) {
-          self.avatarName(hashParts[3]);
+          self.avatarName(decodeURIComponent(hashParts[3]));
         } //use the segment after the third delimeter as the avatar name
         var s = hashParts[1]; //use the segment after the first delimeter as the skill hash
         var pairs = [];
