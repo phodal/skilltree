@@ -158,7 +158,7 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
       });
       return ['', a.join(''), self.portrait(), self.avatarName()].join(hashDelimeter);
     });
-    
+
     //update the address bar when the hash changes
     function useLastHash() {
       if (lastHash) {
@@ -229,6 +229,10 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
     var current_hash = window.location.hash.substr(1);
     self.isOpen(current_hash !== ''); //If there is a hash, open the skill tree by default
     self.useHash(current_hash);
+
+    self.clear = function(){
+      window.location = "";
+    }
   };
 
   return TalentTree;

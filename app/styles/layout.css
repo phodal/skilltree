@@ -503,6 +503,14 @@ li {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
   filter: alpha(opacity=0);
 }
+
+.helper {
+  position: absolute;
+  width: 400px;
+  top: 525px;
+  left: 70%;
+  margin-left:9px;
+}
 .page.animated .avatar {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
