@@ -738,7 +738,7 @@
     },
     {
       "id": 20,
-      "title": "图形设计工具",
+      "title": "平面设计工具",
       "dependsOn": [
         19
       ],
@@ -748,7 +748,21 @@
           "url": "http://graphicdesignclasses.net/design-tools/"
         }
       ],
-      "description": "Software such as Photoshop and devices like drawing tablets are used to create layouts, work with type, touch-up photos, and other activities to add professional polish to your designs.",
+      "books": [
+        {
+          "label": "图解力:跟顶级设计师学作信息图 ",
+          "url": "http://www.amazon.cn/%E5%9B%BE%E8%A7%A3%E5%8A%9B-%E8%B7%9F%E9%A1%B6%E7%BA%A7%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%AD%A6%E4%BD%9C%E4%BF%A1%E6%81%AF%E5%9B%BE-%E6%9C%A8%E6%9D%91%E5%8D%9A%E4%B9%8B/dp/B00D10E2NC/ref=sr_1_1?ie=UTF8&qid=1424747261&sr=8-1&keywords=%E5%9B%BE%E8%A7%A3%E5%8A%9B"
+        },
+        {
+          "label": "文字设计",
+          "url": "http://www.amazon.cn/%E6%96%87%E5%AD%97%E8%AE%BE%E8%AE%A1-%E6%97%A5%E6%9C%AC%E5%B9%B3%E9%9D%A2%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C-%E6%97%A5%E6%9C%AC-DESIGNING%E7%BC%96%E8%BE%91%E9%83%A8/dp/B00FG1OL2Q/ref=sr_1_27?s=books&ie=UTF8&qid=1424747321&sr=1-27&keywords=%E5%B9%B3%E9%9D%A2%E8%AE%BE%E8%AE%A1  "
+        },
+        {
+          "label": "Adobe Photoshop CS6标准培训教材",
+          "url": "http://www.amazon.cn/Adobe-Photoshop-CS6%E6%A0%87%E5%87%86%E5%9F%B9%E8%AE%AD%E6%95%99%E6%9D%90-ACAA%E4%B8%93%E5%AE%B6%E5%A7%94%E5%91%98%E4%BC%9A/dp/B00AD2D4QM/ref=sr_1_12?s=books&ie=UTF8&qid=1424747376&sr=1-12&keywords=photoshop"
+        }
+      ],
+      "description": "用如Photoshop之类的软件与手绘板一起创建布局、字体排印、视觉艺术、版面等以添加专业润色你的设计。",
       "stats": [
         {
           "title": "Charisma",
