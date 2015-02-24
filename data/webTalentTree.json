@@ -989,6 +989,20 @@
         22,
         25
       ],
+      "books": [
+        {
+          "label": "企业应用架构模式",
+          "url": "http://www.amazon.cn/%E4%BC%81%E4%B8%9A%E5%BA%94%E7%94%A8%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F-%E7%A6%8F%E5%8B%92/dp/B003LBSRDM/ref=sr_1_1?s=books&ie=UTF8&qid=1424747956&sr=1-1&keywords=%E4%BC%81%E4%B8%9A+%E6%A8%A1%E5%BC%8F"
+        },
+        {
+          "label": "实现领域驱动设计",
+          "url": "http://www.amazon.cn/%E5%AE%9E%E7%8E%B0%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1-%E5%BC%97%E5%86%9C/dp/B00IYTVWA6/ref=pd_sim_b_1?ie=UTF8&refRID=12M5BEX6D1VPR9RNBCE8"
+        },
+        {
+          "label": "持续交付:发布可靠软件的系统方法",
+          "url": "http://www.amazon.cn/%E6%8C%81%E7%BB%AD%E4%BA%A4%E4%BB%98-%E5%8F%91%E5%B8%83%E5%8F%AF%E9%9D%A0%E8%BD%AF%E4%BB%B6%E7%9A%84%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%B3%95-Jez-Humble-David-Farley/dp/B005V9BB1M/ref=pd_sim_b_27?ie=UTF8&refRID=0CSMABP0CX12RC5KQ703"
+        }
+      ],
       "links": [
         {
           "label": "Web Development Wiki",
