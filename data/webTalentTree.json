@@ -584,7 +584,7 @@
           "url": "http://msdn.microsoft.com/en-us/library/wce3kxhd(v=vs.100).aspx"
         }
       ],
-      "description": "Authentication is the process determining whether someone or something is who or what it is declared to be. Authorization is the process of determining if a user is allowed to perform an action or has access to a resource.",
+      "description": "认证的过程是确定某人或某事是否是谁或什么。授权是当用户被允许执行动作或具有对资源的访问确定的过程。",
       "stats": [
         {
           "title": "Fortitude",
@@ -608,23 +608,29 @@
           "url": "http://en.wikipedia.org/wiki/Ajax_(programming)"
         },
         {
-          "label": "List of Videos for AJAX",
-          "url": "http://thenewboston.org/list.php?cat=61"
-        },
-        {
-          "label": "Ajax: The Official Microsoft ASP.NET Site",
-          "url": "http://www.asp.net/ajax"
-        },
-        {
-          "label": "Web Service Wiki",
-          "url": "http://en.wikipedia.org/wiki/Web_service"
-        },
-        {
           "label": "Representational state transfer (REST) Wiki",
           "url": "http://en.wikipedia.org/wiki/Representational_state_transfer"
         }
       ],
-      "description": "Technology exists to allow separate systems to communicate between each other in various ways as well as allowing interfaces to be more intractive.  These include the use of Asynchronous JavaScript and XML (AJAX), usually on the client-side, to communicate with an external system.  Other technologies, such as web services, are used to setup end-points for allowing communication with an external system.",
+      "books": [
+        {
+          "label": "RESTful Web APIs中文版",
+          "url": "http://www.amazon.cn/RESTful-Web-APIs%E4%B8%AD%E6%96%87%E7%89%88-%E4%BC%A6%E7%BA%B3%E5%BE%B7%C2%B7%E7%90%86%E6%9F%A5%E5%BE%B7%E6%A3%AE/dp/B00KWGEI64/ref=sr_1_1?ie=UTF8&qid=1424745370&sr=8-1&keywords=restful"
+        },
+        {
+          "label": "REST实战:中文版超媒体和系统架构",
+          "url": "http://www.amazon.cn/REST%E5%AE%9E%E6%88%98-%E4%B8%AD%E6%96%87%E7%89%88%E8%B6%85%E5%AA%92%E4%BD%93%E5%92%8C%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84-%E9%9F%A6%E4%BC%AF/dp/B005XGSFE4/ref=sr_1_2?ie=UTF8&qid=1424745421&sr=8-2&keywords=REST"
+        },
+        {
+          "label": "Head First Ajax",
+          "url": "http://www.amazon.cn/Head-First-Ajax-%E8%8E%B1%E5%B0%94/dp/B003VTM8C0/ref=sr_1_2?ie=UTF8&qid=1424745464&sr=8-2&keywords=ajax"
+        },
+        {
+          "label": "Ajax权威指南",
+          "url": "http://www.amazon.cn/Ajax%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E8%B5%AB%E5%B0%94%E5%BE%B7%E5%B0%94/dp/B002T9VGG2/ref=sr_1_4?ie=UTF8&qid=1424745464&sr=8-4&keywords=ajax"
+        }
+      ],
+      "description": "API是一些预先定义的函数，目的是提供应用程序与开发人员基于某软件或硬件得以访问一组例程的能力，而又无需访问源码，或理解内部工作机制的细节。通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。",
       "stats": [
         {
           "title": "Strength",
