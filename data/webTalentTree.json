@@ -533,12 +533,26 @@
     },
     {
       "id": 15,
-      "title": "服务端 Development Mastery",
+      "title": "精通服务端开发",
+      "books": [
+        {
+          "label": "NoSQL精粹",
+          "url": "http://www.amazon.cn/NoSQL%E7%B2%BE%E7%B2%B9-%E5%A1%9E%E5%BE%97%E6%8B%89%E5%90%89/dp/B00EEQ2GPS/ref=sr_1_1?ie=UTF8&qid=1424744772&sr=8-1&keywords=nosql"
+        },
+        {
+          "label": "网站性能监测与优化",
+          "url": "http://www.amazon.cn/%E7%BD%91%E7%AB%99%E6%80%A7%E8%83%BD%E7%9B%91%E6%B5%8B%E4%B8%8E%E4%BC%98%E5%8C%96-%E5%85%8B%E9%B2%81%E5%B0%94/dp/B004BNA3HC/ref=sr_1_4?ie=UTF8&qid=1424744831&sr=8-4&keywords=web%E6%80%A7%E8%83%BD"
+        },
+        {
+          "label": "实用负载均衡技术:网站性能优化攻略 ",
+          "url": "http://www.amazon.cn/%E5%AE%9E%E7%94%A8%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E6%8A%80%E6%9C%AF-%E7%BD%91%E7%AB%99%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%94%BB%E7%95%A5-%E9%97%A8%E4%BC%AF%E9%87%8C/dp/B00COZI7XQ/ref=pd_sim_b_8?ie=UTF8&refRID=0B6S0AP07MQBNWSAY3MC"
+        }
+      ],
       "dependsOn": [
         12,
         14
       ],
-      "description": "You are capable of architecting and building an application's backend to efficiently store and retrieve data.",
+      "description": "你有能力设计和构建应用程序的后台,同时高效地存储和检索数据。",
       "stats": [
         {
           "title": "Strength",
