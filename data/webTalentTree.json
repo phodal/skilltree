@@ -592,7 +592,7 @@
         }
       ],
       "talents": [
-        "Truthseeker"
+        "真理探寻者"
       ]
     },
     {
@@ -646,7 +646,7 @@
         }
       ],
       "talents": [
-        "Mindweaver"
+        "心灵编织"
       ]
     },
     {
@@ -836,16 +836,8 @@
       ],
       "books": [
         {
-          "label": "构建高性能Web站点",
-          "url": "http://www.amazon.cn/%E6%9E%84%E5%BB%BA%E9%AB%98%E6%80%A7%E8%83%BDWeb%E7%AB…eywords=%E6%9E%84%E5%BB%BA%E9%AB%98%E6%80%A7%E8%83%BDweb%E7%AB%99%E7%82%B9"
-        },
-        {
-          "label": "深入理解Nginx:模块开发与架构解析",
-          "url": "http://www.amazon.cn/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Nginx-%E6%A8%A1%E5…316&sr=8-9&keywords=%E9%AB%98%E6%80%A7%E8%83%BD%E6%9C%8D%E5%8A%A1%E5%99%A8"
-        },
-        {
-          "label": "Web性能权威指南",
-          "url": "http://www.amazon.cn/Web%E6%80%A7%E8%83%BD%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D…FU/ref=sr_1_1?ie=UTF8&qid=1424396385&sr=8-1&keywords=web%E6%80%A7%E8%83%BD"
+          "label": "鸟哥的Linux私房菜:服务器架设篇",
+          "url": "http://www.amazon.cn/%E9%B8%9F%E5%93%A5%E7%9A%84Linux%E7%A7%81%E6%88%BF%E8%8F%9C-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9E%B6%E8%AE%BE%E7%AF%87-%E9%B8%9F%E5%93%A5/dp/B008AEI8A2/ref=sr_1_1?ie=UTF8&qid=1424745898&sr=8-1&keywords=linux+%E6%9C%8D%E5%8A%A1%E5%99%A8"
         }
       ],
       "maxPoints": 2,
@@ -861,7 +853,7 @@
         }
       ],
       "talents": [
-        "Stewardship"
+        "监管"
       ]
     },
     {
@@ -878,18 +870,28 @@
         {
           "label": "Minimize payload size - Google Developers",
           "url": "https://developers.google.com/speed/docs/best-practices/payload"
+        }
+      ],
+      "books": [
+        {
+          "label": "构建高性能Web站点",
+          "url": "http://www.amazon.cn/%E6%9E%84%E5%BB%BA%E9%AB%98%E6%80%A7%E8%83%BDWeb%E7%AB…eywords=%E6%9E%84%E5%BB%BA%E9%AB%98%E6%80%A7%E8%83%BDweb%E7%AB%99%E7%82%B9"
         },
         {
-          "label": "Parallelize downloads across hostnames - Google Developers",
-          "url": "https://developers.google.com/speed/docs/best-practices/rtt#ParallelizeDownloads"
+          "label": "深入理解Nginx:模块开发与架构解析",
+          "url": "http://www.amazon.cn/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Nginx-%E6%A8%A1%E5…316&sr=8-9&keywords=%E9%AB%98%E6%80%A7%E8%83%BD%E6%9C%8D%E5%8A%A1%E5%99%A8"
+        },
+        {
+          "label": "Web性能权威指南",
+          "url": "http://www.amazon.cn/Web%E6%80%A7%E8%83%BD%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D…FU/ref=sr_1_1?ie=UTF8&qid=1424396385&sr=8-1&keywords=web%E6%80%A7%E8%83%BD"
         }
       ],
       "maxPoints": 2,
       "rankDescriptions": [
-        "You minify your public-facing files and serve compressed files to save bandwidth and improve your site&raquo;s speed.",
-        "You secure sensitive traffic over HTTPS using an SSL certificate."
+        "能最小化公共文件(js,css)和服务压缩(gzip)以节省带宽,同时提高网站速度",
+        "确保敏感流量通过HTTPS,并使用SSL证书"
       ],
-      "description": "Before sharing your application with the world, follow the best practices for security and performance on the server.",
+      "description": "在与世界分享你的应用程序，请在服务器上的安全性和性能的最佳实践。",
       "stats": [
         {
           "title": "Fortitude",
@@ -901,7 +903,7 @@
         }
       ],
       "talents": [
-        "Spectral Guide"
+        "频谱指南"
       ]
     },
     {
