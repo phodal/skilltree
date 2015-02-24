@@ -47,13 +47,13 @@
 
             <div data-bind="html: description" class="skill-description"></div>
             <ul class="skill-links">
-              博客:
+              相关博客或内容:
               <!--ko foreach: links-->
               <li>
                 <a data-bind="attr: { href: url }, text: label" target="_blank"></a>
               </li>
               <!--/ko-->
-              书籍:
+              相关书籍:
               <!--ko foreach: books-->
               <li>
                 <a data-bind="attr: { href: url }, text: label" target="_blank"></a>
@@ -68,8 +68,7 @@
             <hr>
             <ul class="stats">
               <!--ko foreach: stats-->
-              <li><span class="value">+<span data-bind="text: value"></span></span> <span data-bind="	text: title"
-                                                                                          class="title"></span></li>
+              <li><span class="value">+<span data-bind="text: value"></span></span> <span data-bind="	text: title" class="title"></span></li>
               <!--/ko-->
             </ul>
             <!--ko if: talentSummary-->
@@ -111,6 +110,7 @@
       <br/>
       <br/>
       <h3><a href="https://github.com/phodal/skillock/issues">漏掉什么技能了?(issue)</a></h3>
+      <h3><a href="https://github.com/phodal/skillock">添加推荐、博客书籍</a></h3>
       <h2 class="share-helper" data-bind="css:{active:canShare}">分享</h2>
     </div>
   </div>
