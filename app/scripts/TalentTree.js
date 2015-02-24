@@ -236,6 +236,9 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
     self.noAvatarName = ko.computed(function () {
       return !Boolean(self.avatarName() !== 'Name');
     });
+    self.canShare = ko.computed(function () {
+      return Boolean(self.avatarName() !== 'Name');
+    });
   };
 
   return TalentTree;
