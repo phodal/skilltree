@@ -73,12 +73,12 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
     self.stats = ko.computed(function () {
       //set some defaults
       var totals = {
-        'Charisma': 9
-        , 'Dexterity': 9
-        , 'Fortitude': 9
-        , 'Intellect': 9
-        , 'Strength': 9
-        , 'Wisdom': 9
+        '魅力': 9
+        , '灵巧': 9
+        , '坚韧': 9
+        , '智力': 9
+        , '力量': 9
+        , '智慧': 9
       };
       //get all the skill name/value pairs and add/create them, using the stat name as the index
       ko.utils.arrayForEach(self.skills(), function (skill) {

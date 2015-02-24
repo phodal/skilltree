@@ -27,11 +27,11 @@
       "maxPoints": 2,
       "stats": [
         {
-          "title": "Intellect",
+          "title": "智力",
           "value": 1
         },
         {
-          "title": "Charisma",
+          "title": "魅力",
           "value": 1
         },
         {
@@ -73,7 +73,7 @@
       "maxPoints": 2,
       "stats": [
         {
-          "title": "Charisma",
+          "title": "魅力",
           "value": 3
         }
       ],
@@ -124,11 +124,11 @@
       "description": "LESS与SASS可以帮助你用变量、函数和嵌套编写更加结构化和高效的CSS",
       "stats": [
         {
-          "title": "Charisma",
+          "title": "魅力",
           "value": 2
         },
         {
-          "title": "Dexterity",
+          "title": "灵巧",
           "value": 1
         }
       ]
@@ -152,7 +152,7 @@
       "description": "可以将设计转化为HTML与CSS",
       "stats": [
         {
-          "title": "Charisma",
+          "title": "魅力",
           "value": 10
         }
       ]
@@ -199,11 +199,11 @@
       ],
       "stats": [
         {
-          "title": "Charisma",
+          "title": "魅力",
           "value": 2
         },
         {
-          "title": "Dexterity",
+          "title": "灵巧",
           "value": 1
         }
       ]
@@ -241,11 +241,11 @@
       "description": "SEO是指从自然搜索结果获得网站流量的技术和过程。",
       "stats": [
         {
-          "title": "Intellect",
+          "title": "智力",
           "value": 2
         },
         {
-          "title": "Wisdom",
+          "title": "智慧",
           "value": 1
         }
       ]
@@ -283,11 +283,11 @@
       "description": "分析网站的数据，以提高SEO的成功率",
       "stats": [
         {
-          "title": "Intellect",
+          "title": "智力",
           "value": 1
         },
         {
-          "title": "Wisdom",
+          "title": "智慧",
           "value": 2
         }
       ],
@@ -332,7 +332,7 @@
       "description": "JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。",
       "stats": [
         {
-          "title": "Dexterity",
+          "title": "灵巧",
           "value": 3
         }
       ]
@@ -379,11 +379,11 @@
       "description": "当你熟悉了JavaScript之后，会发现有大量的库和框架可以完成相同的任务，加速你的开发",
       "stats": [
         {
-          "title": "Dexterity",
+          "title": "灵巧",
           "value": 2
         },
         {
-          "title": "Wisdom",
+          "title": "智慧",
           "value": 1
         }
       ],
@@ -409,7 +409,7 @@
       ],
       "stats": [
         {
-          "title": "Dexterity",
+          "title": "灵巧",
           "value": 10
         }
       ]
@@ -453,7 +453,7 @@
           "value": 2
         },
         {
-          "title": "Wisdom",
+          "title": "智慧",
           "value": 1
         }
       ],
@@ -543,7 +543,7 @@
           "value": 2
         },
         {
-          "title": "Dexterity",
+          "title": "灵巧",
           "value": 1
         }
       ],
@@ -607,7 +607,7 @@
       "description": "认证的过程是确定某人或某事是否是谁或什么。授权是当用户被允许执行动作或具有对资源的访问确定的过程。",
       "stats": [
         {
-          "title": "Fortitude",
+          "title": "坚韧",
           "value": 5
         }
       ],
@@ -657,11 +657,11 @@
           "value": 1
         },
         {
-          "title": "Dexterity",
+          "title": "灵巧",
           "value": 1
         },
         {
-          "title": "Intellect",
+          "title": "智力",
           "value": 1
         }
       ],
@@ -686,11 +686,11 @@
       "description": "在开始设计之前确定哪些是客户(网站访问者和网站用户)希望或者需要的.技术栈包括素描基础,卡分类和经验映射",
       "stats": [
         {
-          "title": "Wisdom",
+          "title": "智慧",
           "value": 2
         },
         {
-          "title": "Charisma",
+          "title": "魅力",
           "value": 1
         }
       ],
@@ -748,7 +748,7 @@
       "description": "平面设计是以“视觉”作为沟通和表现的方式，透过多种方式来创造和结合符号、图片和文字，借此作出用来传达想法或讯息的视觉表现。",
       "stats": [
         {
-          "title": "Charisma",
+          "title": "魅力",
           "value": 3
         }
       ],
@@ -785,11 +785,11 @@
       "description": "用如Photoshop之类的软件与手绘板一起创建布局、字体排印、视觉艺术、版面等以添加专业润色你的设计。",
       "stats": [
         {
-          "title": "Charisma",
+          "title": "魅力",
           "value": 2
         },
         {
-          "title": "Intellect",
+          "title": "智力",
           "value": 1
         }
       ]
@@ -827,11 +827,11 @@
       "description": "产品原型可以概括的说是整个产品面市之前的一个框架设计。以网站注册作为例子,整个前期的交互设计流程图之后,就是原形开发的设计阶段,简单的来说是将页面的模块、原素、人机交互的形式，利用线框描述的方法，将产品脱离皮肤状态下更加具体跟生动的进行表达.",
       "stats": [
         {
-          "title": "Wisdom",
+          "title": "智慧",
           "value": 1
         },
         {
-          "title": "Intellect",
+          "title": "智力",
           "value": 2
         }
       ],
@@ -855,11 +855,11 @@
       "description": "能够依靠的项目要求变成一个有吸引力的设计，促进了愉快的用户体验。",
       "stats": [
         {
-          "title": "Wisdom",
+          "title": "智慧",
           "value": 1
         },
         {
-          "title": "Charisma",
+          "title": "魅力",
           "value": 2
         }
       ]
@@ -885,11 +885,11 @@
       "description": "它是一种技术，也被称为可用性测试，所使用的用户测试它来评估一个网站。",
       "stats": [
         {
-          "title": "Charisma",
+          "title": "魅力",
           "value": 1
         },
         {
-          "title": "Wisdom",
+          "title": "智慧",
           "value": 2
         }
       ],
@@ -920,7 +920,7 @@
       "description": "无论是哪种类型的语言都需要一个Web服务器来运行，不同语言可能会限制Web服务器，学习Web服务器的配置将会帮助网站更好的运行。",
       "stats": [
         {
-          "title": "Fortitude",
+          "title": "坚韧",
           "value": 3
         }
       ],
@@ -966,11 +966,11 @@
       "description": "在与世界分享你的应用程序，请在服务器上的安全性和性能的最佳实践。",
       "stats": [
         {
-          "title": "Fortitude",
+          "title": "坚韧",
           "value": 2
         },
         {
-          "title": "Dexterity",
+          "title": "灵巧",
           "value": 1
         }
       ],
@@ -1012,19 +1012,19 @@
       "description": "这里指的是设计，制造和维护一个网站。",
       "stats": [
         {
-          "title": "Charisma",
+          "title": "魅力",
           "value": 3
         },
         {
-          "title": "Dexterity",
+          "title": "灵巧",
           "value": 3
         },
         {
-          "title": "Fortitude",
+          "title": "坚韧",
           "value": 3
         },
         {
-          "title": "Intellect",
+          "title": "智力",
           "value": 3
         },
         {
@@ -1032,7 +1032,7 @@
           "value": 3
         },
         {
-          "title": "Wisdom",
+          "title": "智慧",
           "value": 3
         }
       ],
