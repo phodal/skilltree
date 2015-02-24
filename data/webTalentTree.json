@@ -651,11 +651,11 @@
     },
     {
       "id": 18,
-      "title": "User Discovery",
+      "title": "用户探索",
       "maxPoints": 2,
       "rankDescriptions": [
-        "You know the right questions to ask, and use sketches to confirm your ideas.",
-        "You use advanced techniques like experience mapping to lead conversations with stakeholders."
+        "你知道要问的问题,可以用草图来明确你的想法",
+        "你可以使用先进的技术，如经验映射去指导利益相关方的对话。"
       ],
       "links": [
         {
@@ -663,7 +663,7 @@
           "url": "http://www.adaptivepath.com/ideas/the-anatomy-of-an-experience-map"
         }
       ],
-      "description": "One of the first steps taken before anything is designed is to determine what the client (both the site requestor and the site user) wants and/or needs. Techniques include simple sketching, card-sortting and experience mapping.",
+      "description": "在开始设计之前确定哪些是客户(网站访问者和网站用户)希望或者需要的.技术栈包括素描基础,卡分类和经验映射",
       "stats": [
         {
           "title": "Wisdom",
@@ -675,7 +675,7 @@
         }
       ],
       "talents": [
-        "Mindreader"
+        "思想穿透者"
       ]
     },
     {
