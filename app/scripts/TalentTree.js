@@ -231,7 +231,7 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
     self.useHash(current_hash);
 
     self.clear = function(){
-      window.location = "";
+      window.location = '';
     };
     self.noAvatarName = ko.computed(function () {
       return !Boolean(self.avatarName() !== 'Name');
