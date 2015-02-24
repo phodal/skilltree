@@ -185,7 +185,7 @@
       ],
       "description": "jQuery提供技术和方法在前端操纵网页元素。",
       "talents": [
-        "极好"
+        "咝咝"
       ],
       "stats": [
         {
@@ -438,7 +438,7 @@
         }
       ],
       "talents": [
-        "Beefcake"
+        "美型男"
       ]
     },
     {
@@ -458,12 +458,22 @@
           "url": "https://en.wikipedia.org/wiki/Database_normalization"
         }
       ],
+      "books": [
+        {
+          "label": "Head First PHP & MySQL",
+          "url": "http://www.amazon.cn/Head-First-PHP-amp-MySQL-%E8%B4%9D%E4%BC%8A%E5%88%A9/dp/B004R1QIJU/ref=sr_1_9?ie=UTF8&qid=1424744114&sr=8-9&keywords=mysql"
+        },
+        {
+          "label": "Php和Mysql Web开发",
+          "url": "http://www.amazon.cn/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E4%B8%9B%E4%B9%A6-Php%E5%92%8CMysql-Web%E5%BC%80%E5%8F%91-Luke-Welling/dp/B001TDLD80/ref=sr_1_8?ie=UTF8&qid=1424744114&sr=8-8&keywords=mysql"
+        }
+      ],
       "maxPoints": 2,
       "rankDescriptions": [
-        "You understand how to setup tables.",
-        "You understand how relational databases organize data."
+        "理解如何创建表",
+        "理解关系数据库如何组织数据"
       ],
-      "description": "Databases are powerful engines for storing, organizing, and retrieving data.  There is a wide variety of database platforms to choose from.  The most widely used database language is Structured Query Language (SQL).  Properly architecting your data will facilitate your site&rsquo;s server-side programming.",
+      "description": "数据库是依照某种数据模型组织起来并存放二级存储器中的数据集合。这种数据集合具有如下特点：尽可能不重复，以最优方式为某个特定组织的多种应用服务，其数据结构独立于使用它的应用程序，对数据的增、删、改、查由统一软件进行管理和控制。",
       "stats": [
         {
           "title": "Strength",
@@ -473,7 +483,7 @@
     },
     {
       "id": 14,
-      "title": "Advanced DB Management",
+      "title": "高级数据库管理",
       "dependsOn": [
         13
       ],
@@ -487,28 +497,26 @@
           "url": "http://en.wikipedia.org/wiki/User_defined_function"
         },
         {
-          "label": "Database Tuning Wiki",
-          "url": "http://en.wikipedia.org/wiki/Database_tuning"
-        },
-        {
-          "label": "Performance Monitoring and Tuning How-to Topics (SQL Server)",
-          "url": "http://technet.microsoft.com/en-us/library/ms187830(v=sql.105).aspx"
-        },
-        {
-          "label": "Sql Server Performance Tuning Tips",
-          "url": "http://www.mssqltips.com/sql-server-tip-category/9/performance-tuning/"
-        },
-        {
           "label": "Oracle database Performance Tuning FAQ",
           "url": "http://www.orafaq.com/wiki/Oracle_database_Performance_Tuning_FAQ"
         }
       ],
+      "books": [
+        {
+          "label": "数据库重构",
+          "url": ""
+        },
+        {
+          "label": "高性能MySQL",
+          "url":"http://www.amazon.cn/%E9%AB%98%E6%80%A7%E8%83%BDMySQL-%E6%96%BD%E7%93%A6%E8%8C%A8/dp/B00C1W58DE/ref=sr_1_1?ie=UTF8&qid=1424744114&sr=8-1&keywords=mysql"
+        }
+      ],
       "maxPoints": 2,
       "rankDescriptions": [
-        "You write stored procedures and user-defined functions for more efficient querying.",
-        "You can detect causes of performance deficiencies and fine tune a database like a rock star."
+        "能写存储过程和自定义函数,使得查询更高效",
+        "能检测出影响性能的缺陷"
       ],
-      "description": "Besides creating basic tables and relating data, databases allow for the creation of stored procedures, sets of SQL statements that are stored in the database, and user-defined functions (UDFs) , functions that can be used in SQL statements.  Just architecting the database is not enough.  The database also needs to be optimized or tuned to increase performance.",
+      "description": "仅仅架构数据库是不够的,数据库还需要优化或调整,以提高性能.除了基本的表和关系数据,数据库允许创建存储过程,这一些SQL语句被存在数据库中.MySQL支持用户自定义函数（UDF, User-Defined Functions）.",
       "stats": [
         {
           "title": "Strength",
@@ -520,7 +528,7 @@
         }
       ],
       "talents": [
-        "XXL Knapsack"
+        "XXL 背包"
       ]
     },
     {
