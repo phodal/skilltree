@@ -205,6 +205,7 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
 
     function updateHash(s) {
       window.location.hash = s || newHash;
+      window.jiathis_config.url = window.location.href;
     }
 
     var lastHash, usehash_timeout, newHash, update_hash_timeout, do_update_hash = true;
