@@ -139,6 +139,16 @@
       "dependsOn": [
         2
       ],
+      "books": [
+        {
+          "label": "瞬间之美:Web界面设计如何让用户心动",
+          "url": "http://www.amazon.cn/%E7%9E%AC%E9%97%B4%E4%B9%8B%E7%BE%8E-Web%E7%95%8C%E9%9D%A2%E8%AE%BE%E8%AE%A1%E5%A6%82%E4%BD%95%E8%AE%A9%E7%94%A8%E6%88%B7%E5%BF%83%E5%8A%A8-Robert-Hoekman-Jr/dp/B002JCU2TG/ref=sr_1_1?s=books&ie=UTF8&qid=1424747730&sr=1-1&keywords=web%E8%AE%BE%E8%AE%A1"
+        },
+        {
+          "label": "写给大家看的Web设计书",
+          "url": "http://www.amazon.cn/%E5%86%99%E7%BB%99%E5%A4%A7%E5%AE%B6%E7%9C%8B%E7%9A%84Web%E8%AE%BE%E8%AE%A1%E4%B9%A6-%E4%B8%BD%E8%8E%8E%C2%B7%E6%B4%9B%E6%99%AE%E5%85%8B/dp/B00NG9MOO2/ref=sr_1_1?s=books&ie=UTF8&qid=1424747761&sr=1-1&keywords=%E5%86%99%E7%BB%99%E5%A4%A7%E5%AE%B6%E7%9C%8B%E7%9A%84Web%E8%AE%BE%E8%AE%A1%E4%B9%A6"
+        }
+      ],
       "description": "可以将设计转化为HTML与CSS",
       "stats": [
         {
@@ -386,6 +396,16 @@
       "title": "精通前端开发",
       "dependsOn": [
         9
+      ],
+      "books": [
+        {
+          "label": "O'Reilly:基于MVC的JavaScript Web富应用开发",
+          "url": "http://www.amazon.cn/O-Reilly-%E5%9F%BA%E4%BA%8EMVC%E7%9A%84JavaScript-Web%E5%AF%8C%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91-%E9%BA%A6%E5%8D%A1%E5%8A%B3/dp/B0082226FU/ref=sr_1_6?s=books&ie=UTF8&qid=1424747838&sr=1-6&keywords=mvc"
+        },
+        {
+          "label": "JavaScript框架设计",
+          "url": "http://www.amazon.cn/JavaScript%E6%A1%86%E6%9E%B6%E8%AE%BE%E8%AE%A1-%E5%8F%B8%E5%BE%92%E6%AD%A3%E7%BE%8E/dp/B00JD96R2Y/ref=sr_1_9?s=books&ie=UTF8&qid=1424747885&sr=1-9&keywords=%E6%A1%86%E6%9E%B6"
+        }
       ],
       "stats": [
         {
@@ -798,6 +818,10 @@
         {
           "label": "Axure RP 6原型设计精髓",
           "url": "http://www.amazon.cn/Axure-RP-6%E5%8E%9F%E5%9E%8B%E8%AE%BE%E8%AE%A1%E7%B2%BE%E9%AB%93-Ezra-Schwartz/dp/B00COWGEX4/ref=sr_1_16?ie=UTF8&qid=1424746558&sr=8-16&keywords=%E5%8E%9F%E5%9E%8B"
+        },
+        {
+          "label": "用户体验草图设计工具手册",
+          "url": "http://www.amazon.cn/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%8D%89%E5%9B%BE%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7%E6%89%8B%E5%86%8C-%E6%AF%94%E5%B0%94%C2%B7%E5%B7%B4%E5%85%8B%E6%96%AF%E9%A1%BF/dp/B00K67SPX6/ref=sr_1_4?s=books&ie=UTF8&qid=1424747535&sr=1-4&keywords=%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C"
         }
       ],
       "description": "产品原型可以概括的说是整个产品面市之前的一个框架设计。以网站注册作为例子,整个前期的交互设计流程图之后,就是原形开发的设计阶段,简单的来说是将页面的模块、原素、人机交互的形式，利用线框描述的方法，将产品脱离皮肤状态下更加具体跟生动的进行表达.",
@@ -822,7 +846,13 @@
         19,
         21
       ],
-      "description": "You are capable of converting project requirements to an attractive design that promotes a pleasant user experience.",
+      "books": [
+        {
+          "label": "用户体验要素:以用户为中心的产品设计",
+          "url": "http://www.amazon.cn/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%A6%81%E7%B4%A0…E8VDS/ref=sr_1_2?ie=UTF8&qid=1424396126&sr=8-2&keywords=%E7%94%A8%E6%88%B7"
+        }
+      ],
+      "description": "能够依靠的项目要求变成一个有吸引力的设计，促进了愉快的用户体验。",
       "stats": [
         {
           "title": "Wisdom",
@@ -848,11 +878,11 @@
       ],
       "books": [
         {
-          "label": "用户体验要素:以用户为中心的产品设计",
-          "url": "http://www.amazon.cn/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%A6%81%E7%B4%A0…E8VDS/ref=sr_1_2?ie=UTF8&qid=1424396126&sr=8-2&keywords=%E7%94%A8%E6%88%B7"
+          "label": "用户体验度量:量化用户体验的统计学方法",
+          "url": "http://www.amazon.cn/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E5%BA%A6%E9%87%8F-%E9%87%8F%E5%8C%96%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E7%9A%84%E7%BB%9F%E8%AE%A1%E5%AD%A6%E6%96%B9%E6%B3%95-%E9%82%B5%E7%BD%97/dp/B00JL2ZNX2/ref=sr_1_3?s=books&ie=UTF8&qid=1424747535&sr=1-3&keywords=%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C"
         }
       ],
-      "description": "It is a technique, also known as usability testing, that is used to evaluate a website by testing it on users.",
+      "description": "它是一种技术，也被称为可用性测试，所使用的用户测试它来评估一个网站。",
       "stats": [
         {
           "title": "Charisma",
@@ -864,7 +894,7 @@
         }
       ],
       "talents": [
-        "Alchemist"
+        "炼金"
       ]
     },
     {
@@ -950,7 +980,7 @@
     },
     {
       "id": 26,
-      "title": "Web Development Mastery",
+      "title": "精通Web开发",
       "dependsOn": [
         4,
         5,
@@ -965,7 +995,7 @@
           "url": "http://en.wikipedia.org/wiki/Web_development"
         }
       ],
-      "description": "This refers to designing, creating, and maintaining a website.",
+      "description": "这里指的是设计，制造和维护一个网站。",
       "stats": [
         {
           "title": "Charisma",
@@ -993,7 +1023,7 @@
         }
       ],
       "talents": [
-        "Demigod"
+        "半仙"
       ]
     }
   ]
