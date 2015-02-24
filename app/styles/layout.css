@@ -669,6 +669,13 @@ li {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
   filter: alpha(opacity=0);
 }
+.start-helper-avatar {
+  background: url(../images/red-arrow.png) no-repeat left center;
+  padding-left: 55px;
+  top: 80px;
+  position: relative;
+  left: 410px;
+}
 .start-helper.active {
   -moz-opacity: 1;
   -khtml-opacity: 1;
