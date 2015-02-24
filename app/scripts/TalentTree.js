@@ -255,7 +255,6 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
     }
 
     function updateHash(s) {
-      console.log('updateHash');
       window.location.hash = s || newHash;
     }
 
@@ -266,7 +265,6 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
       usehash_timeout = setTimeout(useLastHash, 50);
     };
     self.hash.subscribe(function (newValue) {
-      console.log(do_update_hash);
       if (do_update_hash) {
         newHash = newValue;
         clearTimeout(update_hash_timeout);
