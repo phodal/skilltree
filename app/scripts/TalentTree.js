@@ -232,7 +232,10 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
 
     self.clear = function(){
       window.location = "";
-    }
+    };
+    self.noAvatarName = ko.computed(function () {
+      return !Boolean(self.avatarName() !== 'Name');
+    });
   };
 
   return TalentTree;
