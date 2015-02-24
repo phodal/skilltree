@@ -406,7 +406,7 @@
           "url": "http://en.wikipedia.org/wiki/Server-side_scripting"
         }
       ],
-      "description": "Developing items (code) that executes on the server (server-side) instead of the user&raquo;s (client&raquo;s) machine.",
+      "description": "在web服务器上编写程序并使之正常运行",
       "stats": [
         {
           "title": "Strength",
@@ -426,7 +426,7 @@
           "url": "http://en.wikipedia.org/wiki/Comparison_of_web_application_frameworks"
         }
       ],
-      "description": "These are software frameworks and collection of packages or modules that allow developers to write applications or services without having to handle the overhead of common activities and lower level details, such as session management, database access, etc.",
+      "description": "Web应用框架有助于减轻网页开发时共通性活动的工作负荷，例如许多框架提供数据库访问接口、标准样板以及会话管理等，可提升代码的可再用性。",
       "stats": [
         {
           "title": "Strength",
