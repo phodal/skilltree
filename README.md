@@ -40,6 +40,19 @@
 
 > 待续  
 
+##Development
+
+Code Fork from [https://github.com/352Media/skilltree](https://github.com/352Media/skilltree)
+
+###技术栈
+
+ - JavaScript
+ - Knockout
+ - RequireJS
+ - Gulp
+ - jQuery
+ - Gule
+
 ## License
 
 © 2015 [Phodal Huang](http://www.phodal.com). This code is distributed under the MIT license. See `LICENSE.txt` in this directory.
