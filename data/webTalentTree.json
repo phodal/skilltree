@@ -135,11 +135,11 @@
     },
     {
       "id": 4,
-      "title": "Web Design Mastery",
+      "title": "精通Web设计",
       "dependsOn": [
         2
       ],
-      "description": "You can bring design ideas to life by translating them into the requisite HTML document with CSS styles.",
+      "description": "可以将设计转化为HTML与CSS",
       "stats": [
         {
           "title": "Charisma",
@@ -149,7 +149,7 @@
     },
     {
       "id": 5,
-      "title": "jQuery Effects",
+      "title": "jQuery效果",
       "dependsOn": [
         4
       ],
@@ -167,15 +167,25 @@
           "url": "http://api.jquery.com/category/effects/"
         }
       ],
+      "books": [
+        {
+          "label": "精通jQuery",
+          "url": "http://www.amazon.cn/%E5%9B%BE%E7%81%B5%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%9B%E4%B9%A6-%E7%B2%BE%E9%80%9AjQuery-%E5%BC%97%E9%87%8C%E6%9B%BC/dp/B00N42VIW0/ref=sr_1_3?ie=UTF8&qid=1424742187&sr=8-3&keywords=jquery"
+        },
+        {
+          "label": "jQuery实战",
+          "url": "http://www.amazon.cn/jQuery%E5%AE%9E%E6%88%98-%E6%AF%94%E4%BC%AF%E5%A5%A5%E7%89%B9/dp/B007QP94JA/ref=sr_1_5?ie=UTF8&qid=1424742233&sr=8-5&keywords=jquery"
+        }
+      ],
       "maxPoints": 3,
       "rankDescriptions": [
-        "You are familiar with manipulating the document object model (DOM) - modifying values, content, properties, entire elements, etc.",
-        "You are familiar with adding standard animation to a web page.",
-        "You are familiar with creating and adding custom effects to a web page."
+        "熟练操作DOM模型",
+        "能熟练添加标准的动画效果到网页上",
+        "能创造或添加自定义效果到网页上"
       ],
-      "description": "jQuery provides techniques and methods for client-side manipulation of the web page elements.",
+      "description": "jQuery提供技术和方法在前端操纵网页元素。",
       "talents": [
-        "Sizzlin"
+        "极好"
       ],
       "stats": [
         {
