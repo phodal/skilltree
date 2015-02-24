@@ -282,7 +282,7 @@
         }
       ],
       "talents": [
-        "Crafty"
+        "狡猾"
       ]
     },
     {
@@ -329,14 +329,14 @@
     },
     {
       "id": 9,
-      "title": "JS 库和框架",
+      "title": "JS库和框架",
       "dependsOn": [
         8
       ],
       "maxPoints": 2,
       "rankDescriptions": [
-        "可以熟练使用jQuery, MooTools, Prototype, Dojo, YUI等框架简单工作",
-        "可以熟练使用KnockoutJS, Ember.js, AngularJS, 及Backbone.js框架完成复杂的前端功能"
+        "熟练使用jQuery, MooTools, Prototype, Dojo, YUI等框架简单工作",
+        "熟练使用KnockoutJS, Ember.js, AngularJS, 及Backbone.js等框架完成复杂的前端功能"
       ],
       "books": [
         {
@@ -378,12 +378,12 @@
         }
       ],
       "talents": [
-        "Nimble"
+        "灵活"
       ]
     },
     {
       "id": 10,
-      "title": "前端 Development Mastery",
+      "title": "精通前端开发",
       "dependsOn": [
         9
       ],
