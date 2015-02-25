@@ -19,17 +19,6 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
 
     var numPortraits = 1;
 
-    self.isOpen = ko.observable(true);
-    self.open = function () {
-      self.isOpen(true);
-    };
-    self.close = function () {
-      self.isOpen(false);
-    };
-    self.toggle = function () {
-      self.isOpen(!self.isOpen());
-    };
-
     //Mega skill list population
     self.skills = ko.observableArray(ko.utils.arrayMap(e.skills, function (item) {
       return new Skill(item);
@@ -71,14 +60,13 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
       }));
     });
     self.stats = ko.computed(function () {
-      //set some defaults
       var totals = {
-        '魅力': 9
-        , '灵巧': 9
-        , '坚韧': 9
-        , '智力': 9
-        , '力量': 9
-        , '智慧': 9
+        '魅力': 9,
+        '灵巧': 9,
+        '坚韧': 9,
+        '智力': 9,
+        '力量': 9,
+        '智慧': 9
       };
       //get all the skill name/value pairs and add/create them, using the stat name as the index
       ko.utils.arrayForEach(self.skills(), function (skill) {
@@ -95,8 +83,8 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
       var result = [];
       for (var statName in totals) {
         result.push({
-          title: statName
-          , value: totals[statName]
+          title: statName,
+          value: totals[statName]
         });
       }
       return result;
@@ -136,11 +124,6 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
     self.newbMode = function () {
       ko.utils.arrayForEach(self.skills(), function (skill) {
         skill.points(0);
-      });
-    };
-    self.godMode = function () {
-      ko.utils.arrayForEach(self.skills(), function (skill) {
-        skill.points(skill.maxPoints);
       });
     };
 
@@ -214,6 +197,7 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
       clearTimeout(usehash_timeout);
       usehash_timeout = setTimeout(useLastHash, 50);
     };
+
     self.hash.subscribe(function (newValue) {
       if (do_update_hash) {
         newHash = newValue;
@@ -226,9 +210,7 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
       self.useHash(window.location.hash.substr(1));
     };
 
-    //Launch
     var current_hash = window.location.hash.substr(1);
-    self.isOpen(current_hash !== ''); //If there is a hash, open the skill tree by default
     self.useHash(current_hash);
 
     self.clear = function(){
