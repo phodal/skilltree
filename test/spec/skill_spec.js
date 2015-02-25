@@ -11,7 +11,7 @@ requirejs.config({
 });
 
 describe('Skill', function () {
-  var Skill, html_skill;
+  var Skill, html_skill, css_skill;
   before(function (done) {
     requirejs(['scripts/Skill'], function (Skill_Class) {
       Skill = Skill_Class;
@@ -19,9 +19,10 @@ describe('Skill', function () {
     });
   });
   html_skill = JSON.parse(skill).skills[0];
+  css_skill = JSON.parse(skill).skills[1];
 
   describe('Parse Test', function () {
-    it('should parse skill tree', function () {
+    it('should parse html skill tree', function () {
       var _skill = new Skill(html_skill);
       _skill.id.should.equal(1);
       _skill.hasPoints().should.equal(false);
@@ -31,6 +32,12 @@ describe('Skill', function () {
       _skill.canAddPoints().should.equal(true);
       _skill.canRemovePoints().should.equal(false);
       _skill.talentSummary().should.equal('');
+    });
+
+    it('should parse css skill tree', function () {
+      var _skill = new Skill(css_skill);
+      _skill.id.should.equal(2);
+      _skill.hasDependencies().should.equal(false);
     });
 
     it('should parse books & links', function () {
