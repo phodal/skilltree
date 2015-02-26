@@ -75,4 +75,19 @@ describe('Skill', function () {
       _skill.helpMessage().should.equal('');
     });
   });
+
+  describe('Skill Rank Description Test', function () {
+    it('should return current description', function () {
+      var _skill = new Skill(css_skill);
+      _skill.addPoint();
+      _skill.currentRankDescription().should.equal('熟悉基础CSS的格式和CSS盒模式');
+      _skill.nextRankDescription().should.equal('熟悉媒体查询和响应式设计，使得设计有适配不同的移动');
+    });
+    it('should return empty next description', function () {
+      var _skill = new Skill(css_skill);
+      _skill.addPoint();
+      _skill.addPoint();
+      _skill.currentRankDescription().should.equal('熟悉媒体查询和响应式设计，使得设计有适配不同的移动');
+    });
+  });
 });
