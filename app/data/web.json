@@ -301,6 +301,12 @@
       "dependsOn": [
         1
       ],
+      "maxPoints": 3,
+      "rankDescriptions": [
+        "熟悉JavaScript基本语法",
+        "熟练使用闭包、高级函数、立即执行函数(匿名函数)等",
+        "熟练使用元编程，解决Callback等"
+      ],
       "links": [
         {
           "label": "Javascript 匿名函数与封装",
