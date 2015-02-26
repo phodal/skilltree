@@ -1,6 +1,5 @@
 --reporter spec
 --ui bdd
 --growl
---check-leaks
 --colors
 test/spec
