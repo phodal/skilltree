@@ -2,6 +2,34 @@
 
 [![Build Status](https://travis-ci.org/phodal/skillock.svg?branch=gh-pages)](https://travis-ci.org/phodal/skillock)
 
+##Development
+
+Code Fork from [https://github.com/352Media/skilltree](https://github.com/352Media/skilltree)
+
+###技术栈
+
+ - JavaScript
+ - Knockout
+ - RequireJS
+ - Gulp
+ - jQuery
+ - Gule
+
+###Setup
+
+1.Install Dependencies
+
+    sudo npm install
+    pip install -r requirements.txt #for compile sprite
+    
+2.develop
+    
+3.test
+    
+    gulp test
+
+    
+
 > Web技能树
 
 ##说明
@@ -39,19 +67,6 @@
  - 设计
 
 > 待续  
-
-##Development
-
-Code Fork from [https://github.com/352Media/skilltree](https://github.com/352Media/skilltree)
-
-###技术栈
-
- - JavaScript
- - Knockout
- - RequireJS
- - Gulp
- - jQuery
- - Gule
 
 ## License
 
