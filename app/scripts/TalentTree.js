@@ -103,7 +103,11 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
       //Portrait stuff
       self.portrait = ko.observable(Math.ceil(Math.random() * numPortraits));
       self.portraitURL = ko.computed(function () {
-        return 'app/images/portraits/portrait-' + self.portrait() + '.jpg';
+        if(self.avatarName() !== 'Name') {
+          return 'https://avatars.githubusercontent.com/' + self.avatarName();
+        } else{
+          return 'app/images/portraits/portrait-' + self.portrait() + '.jpg';
+        }
       });
       self.choosePreviousPortrait = function () {
         var n = self.portrait() - 1;
