@@ -12,7 +12,7 @@ requirejs.config({
 });
 
 describe('Talent Tree Test', function () {
-  var TalentTree, html_skill, css_skill, all_skills;
+  var TalentTree;
   jsdom();
 
   before(function (done) {
@@ -27,6 +27,16 @@ describe('Talent Tree Test', function () {
     it('should parse html talent tree', function () {
       var talent = new TalentTree(all_skills);
       talent.avatarName().should.equal('Name');
+      talent.noAvatarName().should.equal(true);
+      talent.canShare().should.equal(false);
+    });
+
+    it('should remove avatar tips after set name', function () {
+      var talent = new TalentTree(all_skills);
+      talent.avatarName('Phodal');
+      talent.avatarName().should.equal('Phodal');
+      talent.noAvatarName().should.equal(false);
+      talent.canShare().should.equal(true);
     });
   });
 });
