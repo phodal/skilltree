@@ -32,12 +32,7 @@ describe('Skill', function () {
       _skill.canAddPoints().should.equal(true);
       _skill.canRemovePoints().should.equal(false);
       _skill.talentSummary().should.equal('');
-    });
-
-    it('should parse css skill tree', function () {
-      var _skill = new Skill(css_skill);
-      _skill.id.should.equal(2);
-      _skill.hasDependencies().should.equal(false);
+      _skill.helpMessage().should.equal('点击添加技能点');
     });
 
     it('should parse books & links', function () {
@@ -63,6 +58,21 @@ describe('Skill', function () {
       _skill.addPoint();
       _skill.canAddPoints().should.equal(true);
       _skill.canRemovePoints().should.equal(true);
+    });
+  });
+
+  describe('Skill Help Message Test', function () {
+    it('should return correct help message', function () {
+      var _skill = new Skill(css_skill);
+      _skill.id.should.equal(2);
+      _skill.hasDependencies().should.equal(false);
+      _skill.helpMessage().should.equal('点击添加技能点');
+    });
+    it('should return empty help message', function () {
+      var _skill = new Skill(css_skill);
+      _skill.addPoint();
+      _skill.addPoint();
+      _skill.helpMessage().should.equal('');
     });
   });
 });
