@@ -25,16 +25,20 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill', 'script
       }));
 
       //Wire up dependency references
-      ko.utils.arrayForEach(e.skills, function (item) {
-        if (item.dependsOn) {
-          var dependent = Utils.getSkillById(self.skills(), item.id);
-          ko.utils.arrayForEach(item.dependsOn, function (dependencyId) {
-            var dependency = Utils.getSkillById(self.skills(), dependencyId);
-            dependent.dependencies.push(dependency);
-            dependency.dependents.push(dependent);
-          });
-        }
-      });
+      function handleDependencies() {
+        ko.utils.arrayForEach(e.skills, function (item) {
+          if (item.dependsOn) {
+            var dependent = Utils.getSkillById(self.skills(), item.id);
+            ko.utils.arrayForEach(item.dependsOn, function (dependencyId) {
+              var dependency = Utils.getSkillById(self.skills(), dependencyId);
+              dependent.dependencies.push(dependency);
+              dependency.dependents.push(dependent);
+            });
+          }
+        });
+      }
+
+      handleDependencies();
 
       //Avatar properties
       self.avatarName = ko.observable('Name');
