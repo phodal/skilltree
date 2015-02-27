@@ -48,6 +48,14 @@ describe('Talent Tree Test', function () {
         talent.level().should.equal(9);
         talent.avatarName().should.equal("Phodal");
       });
+
+      it('should parse hash to talent tree with portrait', function () {
+        var talent = new TalentTree(all_skills);
+        talent.updateHash("_a2b2c2de3fgh3i2jklm2n2opqr2s2tuvwx2y2z_2_Name");
+        talent.level().should.equal(41);
+        talent.portrait().should.equal(2);
+        talent.avatarName().should.equal("Name");
+      });
     });
   });
 });
