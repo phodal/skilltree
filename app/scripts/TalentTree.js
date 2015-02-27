@@ -141,13 +141,16 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill', 'script
             } //only include points if they are > 1
           }
         });
+        window.jiathis_config.url = window.location.href;
         return ['', a.join(''), self.portrait(), self.avatarName()].join(hashDelimeter);
       });
 
       //update the address bar when the hash changes
       //Update the skill tree based on a new hash
       self.updateLastHash = function (hash) {
-        if (hash) {
+        if (!hash) {
+          return;
+        } else {
           self.newbMode();
 
           var hashParts = hash.split(hashDelimeter);
@@ -186,7 +189,6 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill', 'script
 
       function updateHash(s) {
         window.location.hash = s || newHash;
-        window.jiathis_config.url = window.location.href;
       }
 
       var lastHash, usehash_timeout, newHash, update_hash_timeout, do_update_hash = true;
