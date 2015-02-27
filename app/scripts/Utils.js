@@ -1,4 +1,4 @@
-define([''], function() {
+define(['lib/knockout'], function(ko) {
   'use strict';
   function prettyJoin(array) {
     if (array.length > 2) {
@@ -7,7 +7,13 @@ define([''], function() {
     return array.join(' 和 ');
   }
 
+  function getSkillById(skills, id){
+    return ko.utils.arrayFirst(skills, function (item) {
+      return item.id === id;
+    });
+  }
   return {
+    getSkillById: getSkillById,
     prettyJoin: prettyJoin
   };
 });

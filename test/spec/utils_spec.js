@@ -3,6 +3,8 @@
 var requirejs = require("requirejs");
 var assert = require("assert");
 var should = require("should");
+var jsdom = require('mocha-jsdom');
+
 requirejs.config({
   baseUrl: 'app/',
   nodeRequire: require
@@ -10,6 +12,7 @@ requirejs.config({
 
 describe('Utils', function () {
   var Utils;
+  jsdom();
   before(function (done) {
     requirejs(['scripts/Utils', 'scripts/Link'], function (Utils_Class) {
       Utils = Utils_Class;

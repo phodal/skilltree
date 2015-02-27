@@ -1,5 +1,5 @@
-define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
-  function (ko, Book, Link, Skill) {
+define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill', 'scripts/Utils'],
+  function (ko, Book, Link, Skill, Utils) {
     'use strict';
     window.jiathis_config = {
       url: window.location.href,
@@ -24,18 +24,12 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
         return new Skill(item);
       }));
 
-      function getSkillById(id) {
-        return ko.utils.arrayFirst(self.skills(), function (item) {
-          return item.id === id;
-        });
-      }
-
       //Wire up dependency references
       ko.utils.arrayForEach(e.skills, function (item) {
         if (item.dependsOn) {
-          var dependent = getSkillById(item.id);
+          var dependent = Utils.getSkillById(self.skills(), item.id);
           ko.utils.arrayForEach(item.dependsOn, function (dependencyId) {
-            var dependency = getSkillById(dependencyId);
+            var dependency = Utils.getSkillById(self.skills(), dependencyId);
             dependent.dependencies.push(dependency);
             dependency.dependents.push(dependent);
           });
@@ -168,7 +162,7 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
           var hashCharacters = s.split('');
           for (var i = 0; i < hashCharacters.length; i++) {
             if (!Number(hashCharacters[i])) { //if the current character is not a number,
-              var skill = getSkillById(hashCharacters[i].charCodeAt(0) - asciiOffset); //convert the character to a skill id and look it up
+              var skill = Utils.getSkillById(self.skills(), hashCharacters[i].charCodeAt(0) - asciiOffset); //convert the character to a skill id and look it up
               if (skill) {
                 var points = Number(hashCharacters[i + 1]) || 1; //default to 1 point if the number is not specified next
                 pairs.push({
