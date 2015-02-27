@@ -154,12 +154,12 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill', 'script
             self.avatarName(hashParts[3]);
           } //use the segment after the third delimeter as the avatar name
 
-          var s = hashParts[1]; //use the segment after the first delimeter as the skill hash
+          var skills_hash = hashParts[1]; //use the segment after the first delimeter as the skill hash
 
           var pairs = [];
 
           //break the hash back down into skill/value pairs, one character at a time
-          var hashCharacters = s.split('');
+          var hashCharacters = skills_hash.split('');
           for (var i = 0; i < hashCharacters.length; i++) {
             if (!Number(hashCharacters[i])) { //if the current character is not a number,
               var skill = Utils.getSkillById(self.skills(), hashCharacters[i].charCodeAt(0) - asciiOffset); //convert the character to a skill id and look it up
