@@ -197,7 +197,7 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
         }
       }
 
-      self.updateHash = useHash;
+      self.updateLastHash = useHash;
       //Hash thottling
 
       //update the address bar when the hash changes
