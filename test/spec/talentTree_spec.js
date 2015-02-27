@@ -63,6 +63,7 @@ describe('Talent Tree Test', function () {
         var talent = new TalentTree(all_skills);
         talent.updateLastHash("_a2b2c2de3fgh3i2jklm2n2opqr2s2tuvwx2y2z_2_Name");
         talent.hash().should.equal("_a2b2c2de3fgh3i2jklm2n2opqr2s2tuvwx2y2z_2_Name");
+        talent.level().should.equal(41);
         talent.talentSummary().should.equal("时尚, 咝咝, 狡猾, 灵活, 美型男, XXL 背包, 真理探寻者, 心灵编织, 思想穿透者, 艺术家, 咒术师, 炼金, 监管者, 频谱指南, 半仙");
       });
     });

@@ -146,7 +146,7 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill', 'script
 
       //update the address bar when the hash changes
       //Update the skill tree based on a new hash
-      function useHash(hash) {
+      self.updateLastHash = function (hash) {
         if (hash) {
           self.newbMode();
 
@@ -177,19 +177,16 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill', 'script
 
           do_update_hash = true;
         }
-      }
-
-      self.updateLastHash = useHash;
-      //Hash thottling
+      };
 
       //update the address bar when the hash changes
       function useLastHash() {
-        useHash(lastHash);
+        self.updateLastHash(lastHash);
       }
 
       function updateHash(s) {
         window.location.hash = s || newHash;
-        //window.jiathis_config.url = window.location.href;
+        window.jiathis_config.url = window.location.href;
       }
 
       var lastHash, usehash_timeout, newHash, update_hash_timeout, do_update_hash = true;
