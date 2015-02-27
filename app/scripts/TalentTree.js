@@ -147,18 +147,23 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
       });
 
       //update the address bar when the hash changes
-      function useLastHash() {
-        if (lastHash) {
+      //Update the skill tree based on a new hash
+      function useHash(hash) {
+        if (hash) {
           self.newbMode();
-          var hashParts = lastHash.split(hashDelimeter);
+
+          var hashParts = hash.split(hashDelimeter);
           if (hashParts[2]) {
             self.portrait(Number(hashParts[2]));
           } //use the segment after the second delimeter as the portrait index
           if (hashParts[3]) {
-            self.avatarName(decodeURIComponent(hashParts[3]));
+            self.avatarName(hashParts[3]);
           } //use the segment after the third delimeter as the avatar name
+
           var s = hashParts[1]; //use the segment after the first delimeter as the skill hash
+
           var pairs = [];
+
           //break the hash back down into skill/value pairs, one character at a time
           var hashCharacters = s.split('');
           for (var i = 0; i < hashCharacters.length; i++) {
@@ -173,6 +178,7 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
               }
             }
           }
+
           //cycle through the whole list, adding points where possible, until the list is depleted
           var pointsWereAllocated = true; //flag
           var handlePair = function (pair) {
@@ -186,8 +192,17 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill'],
             pointsWereAllocated = false; //assume the list is depleted by default
             ko.utils.arrayForEach(pairs, handlePair);
           }
+
           do_update_hash = true;
         }
+      }
+
+      self.updateHash = useHash;
+      //Hash thottling
+
+      //update the address bar when the hash changes
+      function useLastHash() {
+        useHash(lastHash);
       }
 
       function updateHash(s) {

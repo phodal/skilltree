@@ -21,7 +21,7 @@ describe('Talent Tree Test', function () {
       done();
     });
   });
-	var all_skills = JSON.parse(skill);
+  var all_skills = JSON.parse(skill);
 
   describe('Parse Test', function () {
     it('should parse html talent tree', function () {
@@ -37,6 +37,17 @@ describe('Talent Tree Test', function () {
       talent.avatarName().should.equal('Phodal');
       talent.noAvatarName().should.equal(false);
       talent.canShare().should.equal(true);
+    });
+  });
+
+  describe('Level Test', function () {
+    describe('Hash Test', function () {
+      it('should parse hash to talent tree', function () {
+        var talent = new TalentTree(all_skills);
+        talent.updateHash("_m2n2x2y2_1_Phodal");
+        talent.level().should.equal(9);
+        talent.avatarName().should.equal("Phodal");
+      });
     });
   });
 });
