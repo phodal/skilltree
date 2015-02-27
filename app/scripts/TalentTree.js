@@ -156,23 +156,7 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill', 'script
 
           var skills_hash = hashParts[1]; //use the segment after the first delimeter as the skill hash
 
-          var pairs = [];
-
-          //break the hash back down into skill/value pairs, one character at a time
-          var hashCharacters = skills_hash.split('');
-          for (var i = 0; i < hashCharacters.length; i++) {
-            if (!Number(hashCharacters[i])) { //if the current character is not a number,
-              var skill = Utils.getSkillById(self.skills(), hashCharacters[i].charCodeAt(0) - asciiOffset); //convert the character to a skill id and look it up
-              if (skill) {
-                var points = Number(hashCharacters[i + 1]) || 1; //default to 1 point if the number is not specified next
-                pairs.push({
-                  skill: skill
-                  , points: points
-                });
-              }
-            }
-          }
-
+          var pairs = Utils.getSkillsByHash(skills_hash, self.skills(), asciiOffset);
           //cycle through the whole list, adding points where possible, until the list is depleted
           var pointsWereAllocated = true; //flag
           var handlePair = function (pair) {
@@ -201,7 +185,7 @@ define(['lib/knockout', 'scripts/Book', 'scripts/Link', 'scripts/Skill', 'script
 
       function updateHash(s) {
         window.location.hash = s || newHash;
-        window.jiathis_config.url = window.location.href;
+        //window.jiathis_config.url = window.location.href;
       }
 
       var lastHash, usehash_timeout, newHash, update_hash_timeout, do_update_hash = true;
