@@ -1,19 +1,18 @@
 #Skillock of Web
 
+Basis on [https://github.com/352Media/skilltree](https://github.com/352Media/skilltree)
+
 [![Build Status](https://travis-ci.org/phodal/skillock.svg?branch=gh-pages)](https://travis-ci.org/phodal/skillock)
 
 ##Development
 
-Code Fork from [https://github.com/352Media/skilltree](https://github.com/352Media/skilltree)
-
 ###技术栈
 
- - JavaScript
  - Knockout
  - RequireJS
- - Gulp
  - jQuery
- - Gule
+
+ - Gulp
 
 ###Setup
 
@@ -27,8 +26,6 @@ Code Fork from [https://github.com/352Media/skilltree](https://github.com/352Med
 3.test
     
     gulp test
-
-    
 
 > Web技能树
 
@@ -48,25 +45,6 @@ Code Fork from [https://github.com/352Media/skilltree](https://github.com/352Med
   - UI
 
 ![Screen shot](./screenshot.jpg)
-
-#Skillock of Internet Of Things 
-
-> 物联网技能树
-
-##说明
-
-所需技能:
-
- - 硬件电路设计
- - PCB设计
- - Web技能树
- 
-所需软技能:
- 
- - 分析
- - 设计
-
-> 待续  
 
 ## License
 
