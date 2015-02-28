@@ -4,6 +4,7 @@ var requirejs = require("requirejs");
 var assert = require("assert");
 var should = require("should");
 var skill = require('fs').readFileSync('./app/data/web.json', 'utf8');
+var jsdom = require('mocha-jsdom');
 
 requirejs.config({
   baseUrl: 'app/',
@@ -12,6 +13,7 @@ requirejs.config({
 
 describe('Skill', function () {
   var Skill, html_skill, css_skill;
+  jsdom();
   before(function (done) {
     requirejs(['scripts/Skill'], function (Skill_Class) {
       Skill = Skill_Class;
