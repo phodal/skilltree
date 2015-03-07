@@ -13,14 +13,8 @@
 </head>
 <body>
 <div class="ltIE9-hide">
-  <span class="github-btn github-stargazers github-btn-large">
-      <a class="gh-btn" href="https://github.com/phodal/skillock/" target="_blank"><span class="gh-ico"></span>
-        <span class="gh-text">Star</span></a>
-    </span>
-  <span class="github-btn github-me github-btn-large">
-    <a class="gh-btn" id="gh-btn" href="https://github.com/phodal" target="_blank"><span class="gh-ico"></span> <span
-      class="gh-text" id="gh-text">Follow @phodal</span></a>
-    <a class="gh-count" id="gh-count" href="https://github.com/phodal/followers" target="_blank"></a>
+  <span class="github-btn github-stargazers github-btn-large"> <a class="gh-btn" href="https://github.com/phodal/skillock/" target="_blank"><span class="gh-ico"></span> <span class="gh-text">Star</span></a> </span>
+  <span class="github-btn github-me github-btn-large"> <a class="gh-btn" id="gh-btn" href="https://github.com/phodal" target="_blank"><span class="gh-ico"></span> <span class="gh-text" id="gh-text">Follow @phodal</span></a> <a class="gh-count" id="gh-count" href="https://github.com/phodal/followers" target="_blank"></a>
   </span>
   <div class="page open">
     <div class="talent-tree">
@@ -35,29 +29,22 @@
       <!--/ko-->
       <!--/ko-->
       <!--ko foreach: skills-->
-      <div
-        data-bind="css: { 'can-add-points': canAddPoints, 'has-points': hasPoints, 'has-max-points': hasMaxPoints }, attr: { 'data-skill-id': id }"
-        class="skill">
+      <div data-bind="css: { 'can-add-points': canAddPoints, 'has-points': hasPoints, 'has-max-points': hasMaxPoints }, attr: { 'data-skill-id': id }" class="skill">
         <div class="icon-container">
           <div class="icon"></div>
         </div>
         <div class="frame">
           <div class="tool-tip">
             <h3 data-bind="text: title" class="skill-name"></h3>
-
             <div data-bind="html: description" class="skill-description"></div>
             <ul class="skill-links">
               相关博客或内容:
               <!--ko foreach: links-->
-              <li>
-                <a data-bind="attr: { href: url }, text: label" target="_blank"></a>
-              </li>
+              <li> <a data-bind="attr: { href: url }, text: label" target="_blank"></a> </li>
               <!--/ko-->
               相关书籍:
               <!--ko foreach: books-->
-              <li>
-                <a data-bind="attr: { href: url }, text: label" target="_blank"></a>
-              </li>
+              <li> <a data-bind="attr: { href: url }, text: label" target="_blank"></a> </li>
               <!--/ko-->
             </ul>
             <hr data-bind="visible: currentRankDescription() || nextRankDescription()">
@@ -76,8 +63,7 @@
             <!--/ko-->
             <div data-bind="text: helpMessage" class="help-message"></div>
           </div>
-          <div class="skill-points"><span data-bind="text: points" class="points"></span>/<span
-            data-bind="	text: maxPoints" class="max-points"></span></div>
+          <div class="skill-points"><span data-bind="text: points" class="points"></span>/<span data-bind="	text: maxPoints" class="max-points"></span></div>
           <div data-bind="click: addPoint, rightClick: removePoint" class="hit-area"></div>
         </div>
       </div>
@@ -119,8 +105,7 @@
 <script type="text/javascript" >
   var jiathis_config=window.jiathis_config;
 </script>
-<div class="ds-thread" data-thread-key="1" data-title="Web技能树" data-url="http://skill.phodal.com"
-     data-image="http://skill.phodal.com/app/images/portraits/portrait-1.jpg" data-thread="hello"></div>
+<div class="ds-thread" data-thread-key="1" data-title="Web技能树" data-url="http://skill.phodal.com" data-image="http://skill.phodal.com/app/images/portraits/portrait-1.jpg" data-thread="hello"></div>
 <script type="text/javascript">
   var duoshuoQuery = {short_name: "skillock"};
   (function () {
