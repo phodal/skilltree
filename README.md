@@ -2,8 +2,6 @@
 
 Code Basis on [https://github.com/352Media/skilltree](https://github.com/352Media/skilltree)
 
-Tree Basis On: [https://github.com/phodal/awesome-developer](https://github.com/phodal/awesome-developer)
-
 [![Build Status](https://travis-ci.org/phodal/skillock.svg?branch=gh-pages)](https://travis-ci.org/phodal/skillock)
 
 ##Development
@@ -21,7 +19,6 @@ Tree Basis On: [https://github.com/phodal/awesome-developer](https://github.com/
 1.Install Dependencies
 
     sudo npm install
-    pip install -r requirements.txt #for compile sprite
     
 2.develop
     
