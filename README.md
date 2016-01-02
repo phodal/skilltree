@@ -2,7 +2,7 @@
 
 Code Basis on [https://github.com/352Media/skilltree](https://github.com/352Media/skilltree)
 
-[![Build Status](https://travis-ci.org/phodal/skillock.svg?branch=gh-pages)](https://travis-ci.org/phodal/skillock)
+[![Build Status](https://travis-ci.org/phodal/skilltree.svg?branch=gh-pages)](https://travis-ci.org/phodal/skilltree)
 
 ##Development
 
